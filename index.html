@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Generador de memes</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav-title">Generador de Memes</h1>
+            <ul class="nav-section">
+                <li class="section-menu">Imagen</li>
+                <li class="section-menu">Texto</li>
+                <li class="section-menu">Modo oscuro</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  Vista previa del meme  -->
+
+    <main class="main">
+        <section class="image-section">
+            <article class="image-top-text">TOP TEXT</article>
+            <article class="image-meme"></article>
+            <article class="image-bottom-text">BOTTOM TEXT</article>
+        </section>
+
+        <section class="image-download">
+            <button type="button" class="download-meme">Descargar meme</button>
+        </section>
+    </main>
+
+    <!-- Sección texto -->
+
+    <section class="text-section">
+
+        <!-- Top text -->
+        <article class="section-top-text">
+            <label for="top-text" class="top-text-label">Superior</label>
+            <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input">
+        </article>
+
+        <article class="section-top-text-check">
+            <label for="top-text-check" class="top-text-check-label">Sin texto superior</label>
+            <input type="checkbox" id="top-text-check" class="top-text-check-input">
+        </article>
+
+        <!-- Bottom text -->
+        <article class="section-bottom-text">
+            <label for="bottom-text" class="bottom-text-label">Inferior</label>
+            <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input">
+        </article>
+
+        <article class="section-bottom-text-check">
+            <label for="bottom-text-check" class="bottom-text-check-label">Sin texto inferior</label>
+            <input type="checkbox" id="bottom-text-check" class="bottom-text-check-input">
+        </article>
+
+        <!-- Fuente -->
+        <article class="section-font">
+            <label for="font">FUENTE</label>
+            <select name="font" id="font">
+                <option value="arial">Arial</option>
+                <option value="arial-black">Arial Black</option>
+                <option value="american-typewriter">American Typewriter</option>
+                <option value="andale-mono">Andale Mono</option>
+                <option value="impact">Impact</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="impact">Impact</option>
+                <option value="verdana">Verdana</option>
+                <option value="times-new-roman">Times New Roman</option>
+            </select>
+        </article>
+
+        <article class="font-options">
+            <article class="option-size">
+                <input type="number" value="40" id="input-size">
+            </article>
+
+            <article class="option-align">
+                <button type="button" class="button-left-align">I</button>
+                <button type="button" class="button-center-align">C</button>
+                <button type="button" class="button-right-align">D</button>
+            </article>
+        </article>
+
+        <!-- Color -->
+
+        <article class="section-color">
+            <label for="font-color">COLOR</label>
+            <input type="color" id="font-color" value="#000000">
+            <span class="font-color-text">#000000</span>
+        </article>
+
+        <!-- Fondo -->
+        <article class="section-background">
+            <label for="background-color">FONDO</label>
+            <input type="color" id="background-color" value="#ffffff">
+            <span class="font-color-background">#ffffff</span>
+        </article>
+
+        <label for="background-none">Fondo transparente</label>
+        <input type="check" id="background-none">
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
