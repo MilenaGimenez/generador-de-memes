@@ -35,6 +35,70 @@
         </section>
     </main>
 
+    <!-- Sección imagen -->
+
+    <section class="image-section">
+
+        <!-- URL -->
+        <article class="section-url">
+            <label for="url">URL</label>
+            <input type="url" id="url">
+        </article>
+
+        <!-- Fondo -->
+        <article class="section-background">
+            <label for="background-color">FONDO</label>
+            <input type="color" id="background-color" value="#ffffff">
+            <span class="font-color-background">#ffffff</span>
+
+            <select name="background-style" id="background-style">
+                <option value="unset">Ninguno</option>
+                <option value="lighten">Aclarar</option>
+                <option value="darken">Oscurecer</option>
+                <option value="difference">Diferencia</option>
+                <option value="luminosity">Luminosidad</option>
+                <option value="multiply">Multiplicar</option>
+            </select>
+        </article>
+
+        <!-- Filtros -->
+        <article class="section-filters">
+            <label for="filters">FILTROS</label>
+
+            <article>
+                <label for="brightness">BRILLO</label>
+                <input type="range" id="brightness">
+
+                <label for="opacity">OPACIDAD</label>
+                <input type="range" id="opacity">
+
+                <label for="contrast">CONTRASTE</label>
+                <input type="range" id="contrast">
+
+                <label for="blur">DESENFOQUE</label>
+                <input type="range" id="blur">
+
+                <label for="grayscale">ESCALA DE GRISES</label>
+                <input type="range" id="grayscale">
+
+                <label for="sepia">SEPIA</label>
+                <input type="range" id="sepia">
+
+                <label for="hue">HUE</label>
+                <input type="range" id="hue">
+
+                <label for="saturate">SATURADO</label>
+                <input type="range" id="saturate">
+
+                <label for="negative">NEGATIVO</label>
+                <input type="range" id="negative">
+            </article>
+
+            <button type="button" class="reset-button">Restablecer filtros</button>            
+        </article>
+        
+    </section>
+
     <!-- Sección texto -->
 
     <section class="text-section">
@@ -106,6 +170,35 @@
 
         <label for="background-none">Fondo transparente</label>
         <input type="check" id="background-none">
+
+        <!-- Contorno -->
+        <article class="section-outline">
+            <label for="outline">CONTORNO</label>
+            <button type="button">Ninguno</button>
+            <button type="button">Claro</button>
+            <button type="button">Oscuro</button>
+        </article>
+
+        <!-- Espaciado -->
+        <article class="section-spacing">
+            <label for="font-spacing">ESPACIADO</label>
+            <input type="number" name="font-spacing" id="font-spacing" value="14">
+        </article>
+
+        <!-- Interlineado -->
+        <article class="section-line-spacing">
+            <label for="line-spacing">INTERLINEADO</label>
+            <select name="line-spacing" id="line-spacing">
+                <option value="0.8">0.8</option>
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+                <option value="1.2" selected>1.2</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+            </select>
+        </article>
+
     </section>
 
     <script src="./js/main.js"></script>
