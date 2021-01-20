@@ -1,3 +1,132 @@
+/* Contenedor principal*/
+
 .text-section{
-    display: none;
+    background-color: var(--violet-soft);    
+    width: 25%;    
+    color: var(--white);    
+}
+
+/* Titulo */
+
+.text-section-title{
+    text-align: center;    
+    margin: 13% 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.text-section-form{
+    margin: 5%;
+}
+
+/* Subtitulos secciones */
+
+.section-font, .section-color, .section-outline, .section-spacing, .section-line-spacing{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.section-top-text, .section-bottom-text{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.top-text-input, .bottom-text-input, .select-font, .spacing-input, .select-line-spacing{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+}
+
+.top-text-label, .bottom-text-label, .font-label, .color-label, .background-label, .section-outline, .spacing-label, .line-spacing-label{
+    padding: 7px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.top-text-check-label, .bottom-text-check-label, .color-check-label{
+    font-size: 0.8rem;    
+}
+
+.font-options{    
+    display: flex;
+    justify-content: space-between;    
+}
+
+.size-input{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+}
+
+.button-align{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    width: 25px;    
+}
+
+/* Color */
+
+
+.section-color-background{
+    display: flex;    
+    margin-top: 15px;
+    justify-content: space-between;    
+}
+
+.color-label, .background-label{
+    padding: 7px 0;
+    font-size: 1.1rem;
+    font-weight: 500;    
+}
+
+.section-color, .section-background{
+    display: flex;
+    justify-content: space-between;       
+}
+
+.box-color, .box-background{
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--black);
+    font-weight: 300;
+    display: flex;
+    align-items: center;  
+    width: 100%;
+    margin-top: -15px;    
+} 
+
+.color-input, .background-input{    
+    border-radius: 5px;
+    outline-style: none; 
+    border-radius: 50px;    
+    width: 20px;
+    height: 20px;    
+}
+
+.font-color-text, .font-color-background{
+    padding: 0 15px;
+}
+
+
+.outline-buttons{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-outline{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    width: 30%;   
+    margin-top: 7px; 
 }

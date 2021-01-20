@@ -110,7 +110,7 @@
                     
             </article>
 
-            <article>
+            <article class="section-filters-button">
                 <button type="button" class="reset-button">Restablecer filtros</button>            
             </article>
 
@@ -121,103 +121,123 @@
     <!-- Sección texto -->
 
     <aside class="text-section">
+        <h2 class="text-section-title">TEXTO</h2>
+        <form class="text-section-form">
 
-        <!-- Top text -->
-        <article class="section-top-text">
-            <label for="top-text" class="top-text-label">Superior</label>
-            <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input">
-        </article>
-
-        <article class="section-top-text-check">
-            <label for="top-text-check" class="top-text-check-label">Sin texto superior</label>
-            <input type="checkbox" id="top-text-check" class="top-text-check-input">
-        </article>
-
-        <!-- Bottom text -->
-        <article class="section-bottom-text">
-            <label for="bottom-text" class="bottom-text-label">Inferior</label>
-            <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input">
-        </article>
-
-        <article class="section-bottom-text-check">
-            <label for="bottom-text-check" class="bottom-text-check-label">Sin texto inferior</label>
-            <input type="checkbox" id="bottom-text-check" class="bottom-text-check-input">
-        </article>
-
-        <!-- Fuente -->
-        <article class="section-font">
-            <label for="font">FUENTE</label>
-            <select name="font" id="font">
-                <option value="arial">Arial</option>
-                <option value="arial-black">Arial Black</option>
-                <option value="american-typewriter">American Typewriter</option>
-                <option value="andale-mono">Andale Mono</option>
-                <option value="impact">Impact</option>
-                <option value="helvetica">Helvetica</option>
-                <option value="impact">Impact</option>
-                <option value="verdana">Verdana</option>
-                <option value="times-new-roman">Times New Roman</option>
-            </select>
-        </article>
-
-        <article class="font-options">
-            <article class="option-size">
-                <input type="number" value="40" id="input-size">
+            <!-- Top text -->
+            
+            <article class="section-top-text">
+                <label for="top-text" class="top-text-label">SUPERIOR</label>
+                <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input">
             </article>
 
-            <article class="option-align">
-                <button type="button" class="button-left-align">I</button>
-                <button type="button" class="button-center-align">C</button>
-                <button type="button" class="button-right-align">D</button>
+            <article class="section-top-text-check">
+                <input type="checkbox" id="top-text-check" class="top-text-check-input">
+                <label for="top-text-check" class="top-text-check-label">Sin texto superior</label>
             </article>
-        </article>
 
-        <!-- Color -->
+            <!-- Bottom text -->
+            <article class="section-bottom-text">
+                <label for="bottom-text" class="bottom-text-label">INFERIOR</label>
+                <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input">
+            </article>
 
-        <article class="section-color">
-            <label for="font-color">COLOR</label>
-            <input type="color" id="font-color" value="#000000">
-            <span class="font-color-text">#000000</span>
-        </article>
+            <article class="section-bottom-text-check">
+                <input type="checkbox" id="bottom-text-check" class="bottom-text-check-input">
+                <label for="bottom-text-check" class="bottom-text-check-label">Sin texto inferior</label>
+            </article>
 
-        <!-- Fondo -->
-        <article class="section-background">
-            <label for="background-color">FONDO</label>
-            <input type="color" id="background-color" value="#ffffff">
-            <span class="font-color-background">#ffffff</span>
-        </article>
+            <!-- Fuente -->
+            <article class="section-font">
+                <label for="font" class="font-label">FUENTE</label>
+                <select name="font" id="font" class="select-font">
+                    <option value="arial">Arial</option>
+                    <option value="arial-black">Arial Black</option>
+                    <option value="american-typewriter">American Typewriter</option>
+                    <option value="andale-mono">Andale Mono</option>
+                    <option value="impact" selected>Impact</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="impact">Impact</option>
+                    <option value="verdana">Verdana</option>
+                    <option value="times-new-roman">Times New Roman</option>
+                </select>
+            </article>
 
-        <label for="background-none">Fondo transparente</label>
-        <input type="check" id="background-none">
+            <article class="font-options">
+                <article class="option-size">
+                    <input type="number" value="40" id="input-size" class="size-input">
+                </article>
 
-        <!-- Contorno -->
-        <article class="section-outline">
-            <label for="outline">CONTORNO</label>
-            <button type="button">Ninguno</button>
-            <button type="button">Claro</button>
-            <button type="button">Oscuro</button>
-        </article>
+                <article class="option-align">
+                    <button type="button" class="button-align"><i class="fas fa-align-left"></i></button>
+                    <button type="button" class="button-align"><i class="fas fa-align-center"></i></button>
+                    <button type="button" class="button-align"><i class="fas fa-align-right"></i></button>
+                </article>
+            </article>
 
-        <!-- Espaciado -->
-        <article class="section-spacing">
-            <label for="font-spacing">ESPACIADO</label>
-            <input type="number" name="font-spacing" id="font-spacing" value="14">
-        </article>
+            <!-- Color -->
+            <section class="section-color-background">
+                <article class="section-box-color">
+                    <h3 class="color-label">COLOR</h3>
+                    
+                    <article class="section-color"> 
+                        <article class="box-color">              
+                            <input type="color" id="font-color" value="#000000" class="color-input">
+                            <span class="font-color-text">#000000</span>
+                        </article>  
+                    </article>
+                </article>
 
-        <!-- Interlineado -->
-        <article class="section-line-spacing">
-            <label for="line-spacing">INTERLINEADO</label>
-            <select name="line-spacing" id="line-spacing">
-                <option value="0.8">0.8</option>
-                <option value="0.8">0.8</option>
-                <option value="1">1</option>
-                <option value="1.2" selected>1.2</option>
-                <option value="1.5">1.5</option>
-                <option value="2">2</option>
-                <option value="2.5">2.5</option>
-            </select>
-        </article>
+                <!-- Fondo -->
+                <article class="section-box-background">
+                    <h3 class="background-label">FONDO</h3>
+                    <article class="section-background">
+                        <article class="box-background">
+                            <input type="color" id="background-color" value="#ffffff" class="background-input">
+                            <span class="font-color-background">#ffffff</span>
+                        </article>
+                    </article>
+                </article>
+                            
+            </section>
 
+            <article class="section-color-check">
+                <input type="checkbox" id="background-none" class="color-check-input">
+                <label for="background-none" class="color-check-label">Fondo transparente</label>
+            </article>            
+
+            <!-- Contorno -->
+            <article class="section-outline">
+                
+                <label for="outline">CONTORNO</label>
+
+                <article class="outline-buttons">
+                    <button type="button" class="button-outline">Ninguno</button>
+                    <button type="button" class="button-outline">Claro</button>
+                    <button type="button" class="button-outline">Oscuro</button>
+                </article>
+            </article>
+
+            <!-- Espaciado -->
+            <article class="section-spacing">
+                <label for="font-spacing" class="spacing-label">ESPACIADO</label>
+                <input type="number" name="font-spacing" id="font-spacing" value="35" class="spacing-input">
+            </article>
+
+            <!-- Interlineado -->
+            <article class="section-line-spacing">
+                <label for="line-spacing" class="line-spacing-label">INTERLINEADO</label>
+                <select name="line-spacing" id="line-spacing" class="select-line-spacing">
+                    <option value="0.8">0.8</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1">1</option>
+                    <option value="1.2" selected>1.2</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                </select>
+            </article>
+        </form>
     </aside>
 
     <script src="./js/main.js"></script>

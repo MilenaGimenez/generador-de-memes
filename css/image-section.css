@@ -1,9 +1,14 @@
+/* Contenedor principal*/
+
 .image-section{
     background-color: var(--violet-soft);    
     width: 25%;
-    height: 100vh; 
-    color: var(--white);   
+    /* height: 100vh;  */
+    color: var(--white);  
+    display: none; 
 }
+
+/* Titulo */
 
 .image-section-title{    
     text-align: center;    
@@ -15,6 +20,8 @@
 .image-section-form{    
     margin: 5%;
 }
+
+/* Subtitulos secciones */
 
 .section-url, .section-filters, .section-background{
     display: flex;
@@ -59,7 +66,7 @@
 }
 
 .url-label, .background-color-label, .filters-label{
-    padding: 10px 0;
+    padding: 7px 0;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -97,8 +104,9 @@
   cursor: pointer;
 }
 
+
 .reset-button{
-    margin: 5% 0;
+    margin-top: 10px;
     padding: 3.5%;
     border-radius: 5px;    
     margin-bottom: 5%; 
@@ -109,10 +117,11 @@
     transition: all 0.8s ease;
     outline: none;
     border: none;
+    
 }
 
 .reset-button:hover{
-    margin: 5% 0;
+    margin-top: 10px;
     padding: 3.5%;
     border-radius: 5px;    
     margin-bottom: 5%; 
