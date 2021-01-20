@@ -8,106 +8,114 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/image-section.css">
     <title>Generador de memes</title>
 </head>
-<body>
+<body class="body">
     <!-- Barra de navegación -->
+    <section class="header-main-box">
+        <header class="header">
+            <nav class="nav">
+                <article class="nav-title-box">
+                    <h1 class="nav-title">Generador de Memes</h1>
+                    <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image">
+                </article>
+                <ul class="nav-section">
+                    <li class="nav-item"><i class="fas fa-file-image"></i> Imagen</li>
+                    <li class="nav-item"><i class="fas fa-font"></i> Texto</li>
+                    <li class="nav-item"><i class="fas fa-lightbulb"></i> Modo oscuro</li>
+                </ul>
+            </nav>
+        </header>
 
-    <header class="header">
-        <nav class="nav">
-            <article class="nav-title-box">
-                <h1 class="nav-title">Generador de Memes</h1>
-                <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image">
-            </article>
-            <ul class="nav-section">
-                <li class="nav-item"><i class="fas fa-file-image"></i> Imagen</li>
-                <li class="nav-item"><i class="fas fa-font"></i> Texto</li>
-                <li class="nav-item"><i class="fas fa-lightbulb"></i> Modo oscuro</li>
-            </ul>
-        </nav>
-    </header>
+        <!--  Vista previa del meme  -->
 
-    <!--  Vista previa del meme  -->
+        <main class="main">
+            <section class="meme-section">
+                <article class="meme-top-text">TOP TEXT</article>
+                <article class="meme-image"></article>
+                <article class="meme-bottom-text">BOTTOM TEXT</article>
+            </section>
 
-    <main class="main">
-        <section class="meme-section">
-            <article class="meme-top-text">TOP TEXT</article>
-            <article class="meme-image"></article>
-            <article class="meme-bottom-text">BOTTOM TEXT</article>
-        </section>
-
-        <section class="image-download">
-            <button type="button" class="download-meme"><i class="fas fa-download"></i> Descargar meme</button>
-        </section>
-    </main>
+            <section class="image-download">
+                <button type="button" class="download-meme"><i class="fas fa-download"></i> Descargar meme</button>
+            </section>
+        </main>
+    </section>
 
     <!-- Sección imagen -->
 
-    <section class="image-section">
+    <aside class="image-section">
 
-        <!-- URL -->
-        <article class="section-url">
-            <label for="url">URL</label>
-            <input type="url" id="url">
-        </article>
+        <form class="image-section-form">
 
-        <!-- Fondo -->
-        <article class="section-background">
-            <label for="background-color">FONDO</label>
-            <input type="color" id="background-color" value="#ffffff">
-            <span class="font-color-background">#ffffff</span>
-
-            <select name="background-style" id="background-style">
-                <option value="unset">Ninguno</option>
-                <option value="lighten">Aclarar</option>
-                <option value="darken">Oscurecer</option>
-                <option value="difference">Diferencia</option>
-                <option value="luminosity">Luminosidad</option>
-                <option value="multiply">Multiplicar</option>
-            </select>
-        </article>
-
-        <!-- Filtros -->
-        <article class="section-filters">
-            <label for="filters">FILTROS</label>
-
-            <article>
-                <label for="brightness">BRILLO</label>
-                <input type="range" id="brightness">
-
-                <label for="opacity">OPACIDAD</label>
-                <input type="range" id="opacity">
-
-                <label for="contrast">CONTRASTE</label>
-                <input type="range" id="contrast">
-
-                <label for="blur">DESENFOQUE</label>
-                <input type="range" id="blur">
-
-                <label for="grayscale">ESCALA DE GRISES</label>
-                <input type="range" id="grayscale">
-
-                <label for="sepia">SEPIA</label>
-                <input type="range" id="sepia">
-
-                <label for="hue">HUE</label>
-                <input type="range" id="hue">
-
-                <label for="saturate">SATURADO</label>
-                <input type="range" id="saturate">
-
-                <label for="negative">NEGATIVO</label>
-                <input type="range" id="negative">
+            <!-- URL -->
+            <article class="section-url">
+                <label for="url">URL</label>
+                <input type="url" id="url">
             </article>
 
-            <button type="button" class="reset-button">Restablecer filtros</button>            
-        </article>
-        
-    </section>
+            <!-- Fondo -->
+            <article class="section-background">
+                <label for="background-color">FONDO</label>
+                <input type="color" id="background-color" value="#ffffff">
+                <span class="font-color-background">#ffffff</span>
+
+                <select name="background-style" id="background-style">
+                    <option value="unset">Ninguno</option>
+                    <option value="lighten">Aclarar</option>
+                    <option value="darken">Oscurecer</option>
+                    <option value="difference">Diferencia</option>
+                    <option value="luminosity">Luminosidad</option>
+                    <option value="multiply">Multiplicar</option>
+                </select>
+            </article>
+
+            <!-- Filtros -->
+            <article class="section-filters">
+                <label for="filters">FILTROS</label>
+
+                <article>
+                    <label for="brightness">BRILLO</label>
+                    <input type="range" id="brightness">
+
+                    <label for="opacity">OPACIDAD</label>
+                    <input type="range" id="opacity">
+
+                    <label for="contrast">CONTRASTE</label>
+                    <input type="range" id="contrast">
+
+                    <label for="blur">DESENFOQUE</label>
+                    <input type="range" id="blur">
+
+                    <label for="grayscale">ESCALA DE GRISES</label>
+                    <input type="range" id="grayscale">
+
+                    <label for="sepia">SEPIA</label>
+                    <input type="range" id="sepia">
+
+                    <label for="hue">HUE</label>
+                    <input type="range" id="hue">
+
+                    <label for="saturate">SATURADO</label>
+                    <input type="range" id="saturate">
+
+                    <label for="negative">NEGATIVO</label>
+                    <input type="range" id="negative">
+                    
+            </article>
+
+            <article>
+                <button type="button" class="reset-button">Restablecer filtros</button>            
+            </article>
+
+        </form>   
+
+    </aside>
 
     <!-- Sección texto -->
 
-    <section class="text-section">
+    <aside class="text-section">
 
         <!-- Top text -->
         <article class="section-top-text">
@@ -205,7 +213,7 @@
             </select>
         </article>
 
-    </section>
+    </aside>
 
     <script src="./js/main.js"></script>
 </body>
