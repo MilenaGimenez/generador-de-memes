@@ -1,0 +1,60 @@
+.main{
+    background-image: url(../assets/img/pruebabackground.svg);
+    background-repeat: no-repeat;    
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-section{
+    background-color: var(--white);
+    max-width: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-top-text, .meme-bottom-text{
+    font-size: 3rem;
+    padding: 5%;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.meme-image{
+    background-color: var(--black); 
+    height: 20rem;
+    width: 100%;
+}
+
+.image-download{
+    width: 15%;
+    margin: 2%;
+}
+
+.download-meme{
+    background-color: var(--violet);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 8% 3%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.download-meme:hover{
+    background-color: var(--white);
+    color: var(--violet);
+    font-size: 1rem;
+    padding: 8% 3%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;  
+    transition: all 0.8s ease;  
+}

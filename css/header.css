@@ -13,10 +13,6 @@
     --black: #000;    
 }
 
-.header{
-    background-color: red;        
-}
-
 .nav{
     background-color: var(--violet);
     display: flex;
