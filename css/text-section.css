@@ -1,9 +1,10 @@
 /* Contenedor principal*/
 
 .text-section{
-    background-color: var(--violet-soft);    
+    background-color: var(--gray);    
     width: 25%;    
     color: var(--white);    
+    display: none;
 }
 
 /* Titulo */

@@ -1,11 +1,10 @@
 /* Contenedor principal*/
 
 .image-section{
-    background-color: var(--violet-soft);    
+    background-color: var(--gray);    
     width: 25%;
     /* height: 100vh;  */
-    color: var(--white);  
-    display: none; 
+    color: var(--white);      
 }
 
 /* Titulo */
@@ -87,7 +86,7 @@
 }
 
 .filter-range:active{
-    background-color: var(--violet-ultra-light);
+    background-color: var(--gray-white);
     border-radius: 10px;
     appearance: none;
     height: 8px;
@@ -100,7 +99,7 @@
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: var(--violet-light);
+  background-color: var(--dark-gray);
   cursor: pointer;
 }
 
@@ -112,7 +111,7 @@
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    color: var(--violet); 
+    color: var(--dark-gray); 
     background-color: var(--white);  
     transition: all 0.8s ease;
     outline: none;
@@ -127,7 +126,7 @@
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    background-color: var(--violet); 
+    background-color: var(--dark-gray); 
     color: var(--white);  
     transition: all 0.8s ease;
     outline: none;

@@ -6,10 +6,11 @@
 }
 
 :root{    
-    --violet: #340252;    
-    --violet-soft: #562374;    
-    --violet-light: #a491eb;    
-    --violet-ultra-light: #d5ccf7;    
+    --dark-gray: #191E2B;    
+    --gray: #393E49;    
+    --gray-light: #30343F;    
+    --gray-ultra-light: #252935; 
+    --gray-white: #9E9E9E;
     --white: #fff;    
     --black: #000;    
 }
@@ -30,7 +31,7 @@
 }
 
 .nav{
-    background-color: var(--violet);
+    background-color: var(--dark-gray);
     display: flex;
     justify-content: center;
     align-items: center;
