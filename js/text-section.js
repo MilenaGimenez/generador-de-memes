@@ -8,6 +8,7 @@ const bottomText = document.getElementById('bottom-text');
 const topTextCheck = document.getElementById('top-text-check');
 
 const fontOption = document.getElementById('font');
+const fontSize = document.getElementById('input-size');
 
 // Evento para que se escriba el top text en la imagen
 topText.addEventListener('keyup', () => {    
@@ -28,4 +29,10 @@ bottomText.addEventListener('keyup', () => {
 fontOption.addEventListener('change', () => {
   memeTopText.style.fontFamily = `${fontOption.value}`;
   memeBottomText.style.fontFamily = `${fontOption.value}`;
-})
+});
+
+// Evento para cambiar el tamaño de la fuente
+fontSize.addEventListener('change', () => {
+  memeTopText.style.fontSize = `${fontSize.value}px`
+  memeBottomText.style.fontSize = `${fontSize.value}px`
+});
