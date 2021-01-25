@@ -5,6 +5,7 @@ const fontColorText = document.getElementById('font-color-text');
 const fontBackgroundText = document.getElementById('font-background-text');
 
 
+
 const topText = document.getElementById('top-text');
 const bottomText = document.getElementById('bottom-text');
 const topTextCheck = document.getElementById('top-text-check');
@@ -21,6 +22,7 @@ const noneOutline = document.getElementById('none-outline');
 const fontColor = document.getElementById('font-color');
 const fontBackgroundColor = document.getElementById('background-color');
 const backgroundNone = document.getElementById('background-none');
+const spacingText = document.getElementById('font-spacing');
 
 // Evento para que se escriba el top text en la imagen
 topText.addEventListener('keyup', () => {    
@@ -124,3 +126,9 @@ noneOutline.addEventListener('click', (event) => {
   memeBottomText.style.webkitTextStroke = 'transparent';
 });
 
+// Evento espaciado entre carácteres
+spacingText.addEventListener('input', (event) => {
+  let spacing = event.target.value
+  memeTopText.style.letterSpacing = `${spacing}px`
+  memeBottomText.style.letterSpacing = `${spacing}px`
+})
