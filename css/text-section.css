@@ -152,3 +152,33 @@
     width: 30%;   
     margin-top: 7px; 
 }
+
+/* Estilos a las fuentes del select */
+
+.arial-black{
+    font-family: "arial-black";
+}
+
+.american-typewriter{
+    font-family: "american-typewriter";
+}
+
+.andale-mono{
+    font-family: "Andale mono";
+}
+
+.impact{
+    font-family: "impact";
+}
+
+.coda-caption{
+    font-family: 'Coda Caption';
+}
+
+.verdana{
+    font-family: Verdana;
+}
+
+.times-new-roman{
+    font-family: 'Times New Roman';
+}

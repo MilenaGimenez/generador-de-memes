@@ -27,4 +27,5 @@ bottomText.addEventListener('keyup', () => {
 // Evento para cambiar la fuente en el select
 fontOption.addEventListener('change', () => {
   memeTopText.style.fontFamily = `${fontOption.value}`;
+  memeBottomText.style.fontFamily = `${fontOption.value}`;
 })
