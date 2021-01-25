@@ -20,7 +20,7 @@ const whiteOutline = document.getElementById('white-outline');
 const blackOutline = document.getElementById('black-outline');
 const noneOutline = document.getElementById('none-outline');
 const fontColor = document.getElementById('font-color');
-const fontBackgroundColor = document.getElementById('background-color');
+const fontBackgroundColor = document.getElementById('background-color-text');
 const backgroundNone = document.getElementById('background-none');
 const spacingText = document.getElementById('font-spacing');
 const lineSpacing = document.getElementById('line-spacing');
@@ -91,13 +91,13 @@ fontColor.addEventListener('input', (event) =>{
   fontColorText.innerHTML = color.toUpperCase();
 });
 
-// Evento color del fondo               no anda
-/* fontBackgroundColor.addEventListener('input', (event) => {
+// Evento color del fondo
+fontBackgroundColor.addEventListener('input', (event) => {
   const color2 = event.target.value;
   memeTopText.style.backgroundColor = color2;
   memeBottomText.style.backgroundColor = color2;
   fontBackgroundText.innerHTML = color2.toUpperCase();
-}); */
+});
 
 // Evento fondo transparente
 backgroundNone.addEventListener('click', (event) => {
