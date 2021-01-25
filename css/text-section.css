@@ -1,10 +1,31 @@
+@font-face{
+    font-family: "Andale mono";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/andale-mono.ttf) format("truetype");      
+}
+
+@font-face{
+    font-family: "arial-black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/arial-black.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "american-typewriter";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/american-typewriter.ttf) format("truetype"); 
+}
+
 /* Contenedor principal*/
 
 .text-section{
     background-color: var(--gray);    
     width: 25%;    
     color: var(--white);    
-    display: none;
+    /* display: none; */
 }
 
 /* Titulo */

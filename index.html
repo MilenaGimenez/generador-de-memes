@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -33,9 +35,9 @@
 
         <main class="main">            
             <section class="meme-section">
-                <article class="meme-top-text">TOP TEXT</article>
-                <article class="meme-image"></article>
-                <article class="meme-bottom-text">BOTTOM TEXT</article>
+                <article class="meme-top-text" id="meme-top-text">TOP TEXT</article>
+                <article class="meme-image" id="meme-image"></article>
+                <article class="meme-bottom-text" id="meme-bottom-text">BOTTOM TEXT</article>
             </section>
 
             <section class="image-download">
@@ -154,10 +156,9 @@
                     <option value="arial">Arial</option>
                     <option value="arial-black">Arial Black</option>
                     <option value="american-typewriter">American Typewriter</option>
-                    <option value="andale-mono">Andale Mono</option>
+                    <option value="Andale mono">Andale Mono</option>
                     <option value="impact" selected>Impact</option>
-                    <option value="helvetica">Helvetica</option>
-                    <option value="impact">Impact</option>
+                    <option value="Coda Caption">Coda caption</option>                    
                     <option value="verdana">Verdana</option>
                     <option value="times-new-roman">Times New Roman</option>
                 </select>
@@ -240,6 +241,6 @@
         </form>
     </aside>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/text-section.js"></script>
 </body>
 </html>
