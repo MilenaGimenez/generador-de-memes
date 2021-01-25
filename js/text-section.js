@@ -2,6 +2,7 @@ const memeTopText = document.getElementById('meme-top-text');
 const memeImage = document.getElementById('meme-image');
 const memeBottomText = document.getElementById('meme-bottom-text');
 const fontColorText = document.getElementById('font-color-text');
+const fontBackgroundText = document.getElementById('font-background-text');
 
 
 const topText = document.getElementById('top-text');
@@ -12,8 +13,11 @@ const bottomTextCheck = document.getElementById('bottom-text-check');
 const fontOption = document.getElementById('font');
 const fontSize = document.getElementById('input-size');
 const leftAlign = document.getElementById('left-align');
+const centerAlign = document.getElementById('center-align');
+const rightAlign = document.getElementById('right-align');
 const fontColor = document.getElementById('font-color');
-const fontBackgroundColor = document.getElementById('font-color-background');
+const fontBackgroundColor = document.getElementById('background-color');
+const backgroundNone = document.getElementById('background-none');
 
 // Evento para que se escriba el top text en la imagen
 topText.addEventListener('keyup', () => {    
@@ -54,13 +58,24 @@ fontSize.addEventListener('change', () => {
   memeBottomText.style.fontSize = `${fontSize.value}px`
 });
 
-// Evento para cambiar el alineado del texto                              no anda
-/* leftAlign.addEventListener('click', (event) => {
+// Evento para cambiar el alineado del texto a izquierda, centro y derecha
+leftAlign.addEventListener('click', (event) => {
   event.preventDefault();  
   memeTopText.style.textAlign = 'left';
-  memeBottomText.style.textAlign = 'left';
-  console.log(leftAlign.event)
-}); */
+  memeBottomText.style.textAlign = 'left';  
+});
+
+centerAlign.addEventListener('click', (event) => {
+  event.preventDefault();  
+  memeTopText.style.textAlign = 'center';
+  memeBottomText.style.textAlign = 'center';  
+});
+
+rightAlign.addEventListener('click', (event) => {
+  event.preventDefault();  
+  memeTopText.style.textAlign = 'right';
+  memeBottomText.style.textAlign = 'right';  
+});
 
 // Evento color de la fuente
 fontColor.addEventListener('input', (event) =>{
@@ -70,8 +85,19 @@ fontColor.addEventListener('input', (event) =>{
   fontColorText.innerHTML = color.toUpperCase();
 });
 
-// Evento color del fondo
+// Evento color del fondo               no anda
 /* fontBackgroundColor.addEventListener('input', (event) => {
-  const color = event.target.value;
-  memeTopText.style.backgroundColor = color;
+  const color2 = event.target.value;
+  memeTopText.style.backgroundColor = color2;
+  memeBottomText.style.backgroundColor = color2;
+  fontBackgroundText.innerHTML = color2.toUpperCase();
 }); */
+
+// Evento fondo transparente
+backgroundNone.addEventListener('click', (event) => {
+  if(event.target.checked){
+    memeTopText.style.backgroundColor = 'transparent'
+    memeBottomText.style.backgroundColor = 'transparent'
+    memeImage.style.height = '100%'
+  }
+})
