@@ -15,6 +15,9 @@ const fontSize = document.getElementById('input-size');
 const leftAlign = document.getElementById('left-align');
 const centerAlign = document.getElementById('center-align');
 const rightAlign = document.getElementById('right-align');
+const whiteOutline = document.getElementById('white-outline');
+const blackOutline = document.getElementById('black-outline');
+const noneOutline = document.getElementById('none-outline');
 const fontColor = document.getElementById('font-color');
 const fontBackgroundColor = document.getElementById('background-color');
 const backgroundNone = document.getElementById('background-none');
@@ -100,4 +103,24 @@ backgroundNone.addEventListener('click', (event) => {
     memeBottomText.style.backgroundColor = 'transparent'
     memeImage.style.height = '100%'
   }
-})
+});
+
+// Evento contorno de las letras
+whiteOutline.addEventListener('click', (event) => {
+  event.preventDefault();
+  memeTopText.style.webkitTextStroke = '1px white';
+  memeBottomText.style.webkitTextStroke = '1px white';
+});
+
+blackOutline.addEventListener('click', (event) => {
+  event.preventDefault();
+  memeTopText.style.webkitTextStroke = '1px black';
+  memeBottomText.style.webkitTextStroke = '1px black';
+});
+
+noneOutline.addEventListener('click', (event) => {
+  event.preventDefault();
+  memeTopText.style.webkitTextStroke = 'transparent';
+  memeBottomText.style.webkitTextStroke = 'transparent';
+});
+

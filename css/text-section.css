@@ -182,3 +182,7 @@
 .times-new-roman{
     font-family: 'Times New Roman';
 }
+
+.prueba{
+    -webkit-text-stroke-color: red;
+}
