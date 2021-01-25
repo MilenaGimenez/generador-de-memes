@@ -23,6 +23,7 @@ const fontColor = document.getElementById('font-color');
 const fontBackgroundColor = document.getElementById('background-color');
 const backgroundNone = document.getElementById('background-none');
 const spacingText = document.getElementById('font-spacing');
+const lineSpacing = document.getElementById('line-spacing');
 
 // Evento para que se escriba el top text en la imagen
 topText.addEventListener('keyup', () => {    
@@ -131,4 +132,11 @@ spacingText.addEventListener('input', (event) => {
   let spacing = event.target.value
   memeTopText.style.letterSpacing = `${spacing}px`
   memeBottomText.style.letterSpacing = `${spacing}px`
-})
+});
+
+// Evento interlineado
+lineSpacing.addEventListener('change', (event) => {
+  let lineValue = event.target.value
+  memeTopText.style.lineHeight = lineValue;
+  memeBottomText.style.lineHeight = lineValue;
+});
