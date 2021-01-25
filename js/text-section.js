@@ -7,6 +7,7 @@ const fontColorText = document.getElementById('font-color-text');
 const topText = document.getElementById('top-text');
 const bottomText = document.getElementById('bottom-text');
 const topTextCheck = document.getElementById('top-text-check');
+const bottomTextCheck = document.getElementById('bottom-text-check');
 
 const fontOption = document.getElementById('font');
 const fontSize = document.getElementById('input-size');
@@ -24,10 +25,22 @@ bottomText.addEventListener('keyup', () => {
   memeBottomText.innerHTML = bottomText.value;
 });
 
-// Evento para que se elimine la caja de top-text queda mal
-/* topTextCheck.addEventListener('click', (event) => { 
-  memeTopText.style.display = 'none'
-}) */
+// Evento para que se elimine la caja de top-text y de bottom-text
+topTextCheck.addEventListener('click',() => {
+  if(topTextCheck.checked){    
+    memeTopText.style.display = 'none'
+  } else {    
+    memeTopText.style.display = 'block'
+  };
+});
+
+bottomTextCheck.addEventListener('click',() => {
+  if(bottomTextCheck.checked){    
+    memeBottomText.style.display = 'none'
+  } else {    
+    memeBottomText.style.display = 'block'
+  };
+});
 
 // Evento para cambiar la fuente en el select
 fontOption.addEventListener('change', () => {
