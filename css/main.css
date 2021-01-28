@@ -18,6 +18,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: relative;    
 }
 
 .meme-top-text, .meme-bottom-text{
@@ -27,6 +28,7 @@
     font-size: 40px;
     padding: 5%;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    position: static;      
 }
 
 .meme-image{

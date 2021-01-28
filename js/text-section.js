@@ -104,7 +104,15 @@ backgroundNone.addEventListener('click', (event) => {
   if(event.target.checked){
     memeTopText.style.backgroundColor = 'transparent'
     memeBottomText.style.backgroundColor = 'transparent'
-    memeImage.style.height = '100%'
+    memeTopText.style.position = 'absolute'
+    memeBottomText.style.position = 'absolute'
+    memeTopText.style.top = '0'
+    memeBottomText.style.bottom = '0'
+  } else {
+    memeTopText.style.backgroundColor = `${fontBackgroundColor.value}`
+    memeBottomText.style.backgroundColor = `${fontBackgroundColor.value}`
+    memeTopText.style.position = 'static'
+    memeBottomText.style.position = 'static'    
   }
 });
 
