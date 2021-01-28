@@ -110,31 +110,33 @@
 
 .section-color, .section-background{
     display: flex;
-    justify-content: space-between;       
+    justify-content: space-between;      
+    width: 120px;   
 }
 
 .box-color, .box-background{
     background-color: var(--white);
-    padding: 5px;
+    padding: 5px 0;
     border-radius: 5px;
     color: var(--black);
     font-weight: 300;
     display: flex;
     align-items: center;  
-    width: 100%;
-    margin-top: -15px;    
+    width: 100%;    
+    margin-top: -15px;       
 } 
 
-.color-input, .background-input{    
-    border-radius: 5px;
+.color-input, .background-input{        
     outline-style: none; 
     border-radius: 50px;    
     width: 20px;
     height: 20px;    
+    margin-left: 5px;    
+    position: absolute;    
 }
 
 .font-color-text, .font-color-background{
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 
