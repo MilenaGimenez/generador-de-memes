@@ -1,5 +1,5 @@
 const memeTopText = document.getElementById('meme-top-text');
-const memeImage = document.getElementById('meme-image');
+/* const memeImage = document.getElementById('meme-image');//ver */
 const memeBottomText = document.getElementById('meme-bottom-text');
 const fontColorText = document.getElementById('font-color-text');
 const fontBackgroundText = document.getElementById('font-background-text');
