@@ -24,8 +24,8 @@
                     <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image">
                 </article>
                 <ul class="nav-section">
-                    <li class="nav-item"><i class="fas fa-file-image"></i> Imagen</li>
-                    <li class="nav-item"><i class="fas fa-font"></i> Texto</li>
+                    <li class="nav-item" id="image-button"><i class="fas fa-file-image"></i> Imagen</li>
+                    <li class="nav-item" id="text-button"><i class="fas fa-font"></i> Texto</li>
                     <li class="nav-item-dark" id="light-mode"><i class="fas fa-moon"></i> Modo oscuro</li>
                     <li class="nav-item-light" id="dark-mode"><i class="fas fa-sun"></i> Modo claro</li>
                 </ul>
@@ -49,7 +49,7 @@
 
     <!-- Sección imagen -->
 
-    <aside class="image-section">
+    <aside class="image-section" id="image-section">
         <h2 class="image-section-title">IMAGEN</h2>
         <form class="image-section-form">
 
@@ -123,7 +123,7 @@
 
     <!-- Sección texto -->
 
-    <aside class="text-section">
+    <aside class="text-section" id="text-section">
         <h2 class="text-section-title">TEXTO</h2>
         <form class="text-section-form">
 
@@ -243,6 +243,7 @@
     </aside>
 
     <script src="./js/header.js"></script>
+    <script src="./js/image-section.js"></script>
     <script src="./js/text-section.js"></script>
 </body>
 </html>
