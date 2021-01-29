@@ -18,7 +18,7 @@
 }
 
 .image-section-form{    
-    margin: 5%;
+    margin: 5%;    
 }
 
 /* Subtitulos secciones */
@@ -26,7 +26,14 @@
 .section-url, .section-filters, .section-background{
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 15px 0;    
+}
+
+.section-background{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
 }
 
 .url, .background-select{
@@ -34,16 +41,22 @@
     border-radius: 5px;
     outline-style: none;
     border: none;
+    /* display: none; */
 }
 
-.background-color{
+.background-select{
+    width: 45%;
+}
+
+/* .background-color{
     height: 28px;
     border-radius: 5px;
     outline-style: none; 
     border-radius: 50px;    
     width: 20px;
     height: 20px;
-}
+    background-color: green;
+} */
 
 .box-color-background{
     background-color: var(--letter-color-principal);
@@ -52,22 +65,45 @@
     font-weight: 300;
     display: flex;
     align-items: center;  
-    width: 40%;  
+    width: 45%;   
+  
 }
 
 .font-color-background{
     padding: 0 5px;
 }
 
-.background-boxes{
-    display: flex;
-    justify-content: space-between;    
+.font-color-background-img{
+    color: black;    
+    margin-left: 30px;   
 }
 
-.url-label, .background-color-label, .filters-label{
+.background-boxes{
+    display: flex;
+    justify-content: space-between;      
+    width: 16rem; 
+}
+
+.url-label, .filters-label{
     padding: 7px 0;
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+.background-color-label{
+    padding: 7px 0;
+    font-size: 1.1rem;
+    font-weight: 500;    
+    width: 16rem;  
+}
+
+.background-color-img{    
+    outline-style: none; 
+    border-radius: 50px;    
+    width: 20px;
+    height: 20px;    
+    margin-left: 5px;    
+    position: absolute; 
 }
 
 .filter-option-label{
