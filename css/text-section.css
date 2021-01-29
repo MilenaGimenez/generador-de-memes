@@ -22,9 +22,9 @@
 /* Contenedor principal*/
 
 .text-section{
-    background-color: var(--gray);    
+    background-color: var(--aside-color);    
     width: 25%;    
-    color: var(--white);    
+    color: var(--letter-color-principal);    
     /* display: none; */
 }
 
@@ -115,10 +115,10 @@
 }
 
 .box-color, .box-background{
-    background-color: var(--white);
+    background-color: var(--image-text-color);
     padding: 5px 0;
     border-radius: 5px;
-    color: var(--black);
+    color: black;
     font-weight: 300;
     display: flex;
     align-items: center;  
@@ -183,8 +183,4 @@
 
 .times-new-roman{
     font-family: 'Times New Roman';
-}
-
-.prueba{
-    -webkit-text-stroke-color: red;
 }

@@ -18,7 +18,7 @@
     <!-- Barra de navegación -->
     <section class="header-main-box">
         <header class="header">
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <article class="nav-title-box">
                     <h1 class="nav-title">Generador de Memes</h1>
                     <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image">
@@ -26,14 +26,15 @@
                 <ul class="nav-section">
                     <li class="nav-item"><i class="fas fa-file-image"></i> Imagen</li>
                     <li class="nav-item"><i class="fas fa-font"></i> Texto</li>
-                    <li class="nav-item"><i class="fas fa-lightbulb"></i> Modo oscuro</li>
+                    <li class="nav-item-dark" id="light-mode"><i class="fas fa-moon"></i> Modo oscuro</li>
+                    <li class="nav-item-light" id="dark-mode"><i class="fas fa-sun"></i> Modo claro</li>
                 </ul>
             </nav>
         </header>
 
         <!--  Vista previa del meme  -->
 
-        <main class="main">            
+        <main class="main" id="main">            
             <section class="meme-section">
                 <article class="meme-top-text" id="meme-top-text">TOP TEXT</article>
                 <article class="meme-image" id="meme-image"></article>
@@ -241,6 +242,7 @@
         </form>
     </aside>
 
+    <script src="./js/header.js"></script>
     <script src="./js/text-section.js"></script>
 </body>
 </html>

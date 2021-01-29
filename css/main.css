@@ -5,8 +5,8 @@
     background-position: center;    
     display: flex;
     flex-direction: column;
-    align-items: center;    
-   
+    align-items: center;     
+    transition: 0.1s;
 }
 
 .meme-section{    
@@ -22,7 +22,7 @@
 }
 
 .meme-top-text, .meme-bottom-text{
-    background-color: var(--white);
+    background-color: var(--image-text-color);
     width: 100%;
     text-align: center;
     font-size: 40px;
@@ -32,7 +32,7 @@
 }
 
 .meme-image{
-    background-color: var(--black); 
+    background-color: var(--image-meme-color); 
     height: 100%;
     width: 100%;
 }
@@ -43,8 +43,8 @@
 }
 
 .download-meme{
-    background-color: var(--dark-gray);
-    color: var(--white);
+    background-color: var(--button-color);
+    color: var(--letter-color-principal);
     font-size: 1rem;
     padding: 8% 3%;
     width: 100%;
@@ -56,8 +56,8 @@
 }
 
 .download-meme:hover{
-    background-color: var(--white);
-    color: var(--dark-gray);
+    background-color: var(--letter-color-principal);
+    color: var(--button-color);
     font-size: 1rem;
     padding: 8% 3%;
     width: 100%;
@@ -66,4 +66,12 @@
     border-radius: 5px;
     box-shadow: none;  
     transition: all 0.8s ease;  
+}
+
+.light-background{
+    background-image: url(../assets/img/background-light.svg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center;   
+    transition: 0.1s;
 }

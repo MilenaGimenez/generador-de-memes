@@ -6,13 +6,27 @@
 }
 
 :root{    
-    --dark-gray: #191E2B;    
-    --gray: #393E49;    
-    --gray-light: #30343F;    
-    --gray-ultra-light: #252935; 
-    --gray-white: #9E9E9E;
-    --white: #fff;    
-    --black: #000;    
+    --nav-color: #191E2B;    
+    --button-color: #252935;    
+    --aside-color: #393E49;    
+    --gray-light: #30343F;     
+    --range-color: #9E9E9E;
+    --letter-color-principal: #fff;    
+    --letter-color-secundary: #000;   
+    --image-text-color: #fff; 
+    --image-meme-color: #000;
+}
+
+body.light-theme{
+    --nav-color: #ffffff;    
+    --button-color: #ffffff;    
+    --aside-color: #cccccc;    
+    --gray-light: #0a42db;     
+    --range-color: #df0e0e;
+    --letter-color-principal: rgb(131, 131, 131);    
+    --letter-color-secundary: rgb(255, 255, 255);  
+    --image-text-color: #fff; 
+    --image-meme-color: #000;
 }
 
 .body{
@@ -31,7 +45,7 @@
 }
 
 .nav{
-    background-color: var(--dark-gray);
+    background-color: var(--nav-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +63,7 @@
 
 .nav-title{
     font-size: 2rem;    
-    color: var(--white);    
+    color: var(--letter-color-principal);    
 }
 
 .nav-title-image{
@@ -77,14 +91,60 @@
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    color: var(--white); 
+    color: var(--letter-color-principal); 
 }
 
 .nav-item:hover{
     padding: 3.5%;
     border-radius: 5px;
-    background-color: var(--white);   
+    background-color: var(--letter-color-principal);   
     margin-bottom: 5%; 
-    color: var(--black); 
+    color: var(--letter-color-secundary); 
     transition: all 0.8s ease;
+}
+
+.nav-item-light{
+    padding: 3.5%;
+    border-radius: 5px;    
+    margin-bottom: 5%; 
+    cursor: pointer;
+    text-align: center;   
+    color: var(--letter-color-principal); 
+    display: none;
+}
+
+.nav-item-light:hover{
+    padding: 3.5%;
+    border-radius: 5px;
+    background-color: var(--letter-color-principal);   
+    margin-bottom: 5%; 
+    color: var(--letter-color-secundary); 
+    transition: all 0.8s ease;
+    /* display: none; */
+}
+
+.nav-item-dark{
+    padding: 3.5%;
+    border-radius: 5px;    
+    margin-bottom: 5%; 
+    cursor: pointer;
+    text-align: center;   
+    color: var(--letter-color-principal);     
+}
+
+.nav-item-dark:hover{
+    padding: 3.5%;
+    border-radius: 5px;
+    background-color: var(--letter-color-principal);   
+    margin-bottom: 5%; 
+    color: var(--letter-color-secundary); 
+    transition: all 0.8s ease;    
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
 }
