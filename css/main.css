@@ -1,4 +1,4 @@
-.main{
+.main{    
     background-image: url(../assets/img/background.svg);
     background-repeat: no-repeat;    
     background-size: cover;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;    
+    background-color: var(--letter-color-secundary);
 }
 
 .meme-top-text, .meme-bottom-text{

@@ -66,7 +66,7 @@
                 <article class="background-boxes">
                     <article class="box-color-background">
                         <input type="color" id="background-color-img" value="#ffffff" class="background-color-img">
-                        <span class="font-color-background-img">#ffffff</span>
+                        <span class="font-color-background-img" id="background-text-img">#ffffff</span>
                     </article>
 
                     <select name="background-style" id="background-style" class="background-select">
@@ -85,36 +85,36 @@
                 <h3 class="filters-label">FILTROS</h3>
                 
                     <label for="brightness" class="filter-option-label">BRILLO</label>
-                    <input type="range" id="brightness" class="filter-range">
+                    <input type="range" id="brightness" class="filter-range" min="0" max="1" step="0.1" value="1">
 
                     <label for="opacity" class="filter-option-label">OPACIDAD</label>
-                    <input type="range" id="opacity" class="filter-range">
+                    <input type="range" id="opacity" class="filter-range" min="0" max="1" step="0.1" value="1">
 
                     <label for="contrast" class="filter-option-label">CONTRASTE</label>
-                    <input type="range" id="contrast" class="filter-range">
+                    <input type="range" id="contrast" class="filter-range" min="100" max="1000" step="1%" value="0">
 
                     <label for="blur" class="filter-option-label">DESENFOQUE</label>
-                    <input type="range" id="blur" class="filter-range">
+                    <input type="range" id="blur" class="filter-range" min="0" max="10" step="0.1" value="0">
 
                     <label for="grayscale" class="filter-option-label">ESCALA DE GRISES</label>
-                    <input type="range" id="grayscale" class="filter-range">
+                    <input type="range" id="grayscale" class="filter-range" min="0%" max="100%" step="1%" value="0">
 
                     <label for="sepia" class="filter-option-label">SEPIA</label>
-                    <input type="range" id="sepia" class="filter-range">
+                    <input type="range" id="sepia" class="filter-range" min="0%" max="100%" step="1%" value="0">
 
                     <label for="hue" class="filter-option-label">HUE</label>
-                    <input type="range" id="hue" class="filter-range">
+                    <input type="range" id="hue-rotation" class="filter-range" min="0deg" max="359deg" step="1deg" value="0">
 
-                    <label for="saturate" class="filter-option-label">SATURADO</label>
-                    <input type="range" id="saturate" class="filter-range">
+                    <label for="saturation" class="filter-option-label">SATURADO</label>
+                    <input type="range" id="saturation" class="filter-range" min="100" max="1000" step="10%" value="100">
 
-                    <label for="negative" class="filter-option-label">NEGATIVO</label>
-                    <input type="range" id="negative"class="filter-range">
+                    <label for="invert" class="filter-option-label">NEGATIVO</label>
+                    <input type="range" id="invert" class="filter-range" min="0" max="1" step="0.1" value="0">
                     
             </article>
 
             <article class="section-filters-button">
-                <button type="button" class="reset-button">Restablecer filtros</button>            
+                <button type="button" class="reset-button" id="reset-button">Restablecer filtros</button>            
             </article>
 
         </form>   
