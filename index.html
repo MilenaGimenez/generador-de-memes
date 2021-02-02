@@ -43,13 +43,13 @@
             <nav class="nav" id="nav">
                 <article class="nav-title-box">
                     <h1 class="nav-title">Generador de Memes</h1>
-                    <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image">
+                    <img src="./assets/img/favicon.png" alt="Imagen de troll" class="nav-title-image" aria-hidden="true">
                 </article>
                 <ul class="nav-section">
-                    <li class="nav-item" id="image-button"><i class="fas fa-file-image"></i> Imagen</li>
-                    <li class="nav-item" id="text-button"><i class="fas fa-font"></i> Texto</li>
-                    <li class="nav-item-dark" id="light-mode"><i class="fas fa-moon"></i> Modo oscuro</li>
-                    <li class="nav-item-light" id="dark-mode"><i class="fas fa-sun"></i> Modo claro</li>
+                    <li class="nav-item" id="image-button" aria-label="Editar imagen"><i class="fas fa-file-image" aria-hidden="true"></i> Imagen</li>
+                    <li class="nav-item" id="text-button" aria-label="Editar texto"><i class="fas fa-font" aria-hidden="true"></i> Texto</li>
+                    <li class="nav-item-dark" id="light-mode" aria-label="Cambiar a modo claro"><i class="fas fa-moon" aria-hidden="true"></i> Modo oscuro</li>
+                    <li class="nav-item-light" id="dark-mode" aria-label="Cambiar a modo oscuro"><i class="fas fa-sun" aria-hidden="true"></i> Modo claro</li>
                 </ul>
             </nav>
         </header>
@@ -58,13 +58,13 @@
 
         <main class="main" id="main">            
             <section class="meme-section">
-                <article class="meme-top-text" id="meme-top-text">TOP TEXT</article>
-                <article class="meme-image" id="meme-image"></article>
-                <article class="meme-bottom-text" id="meme-bottom-text">BOTTOM TEXT</article>
+                <article class="meme-top-text" id="meme-top-text" aria-hidden="true">TOP TEXT</article>
+                <article class="meme-image" id="meme-image" aria-label="Imagen a editar"></article>
+                <article class="meme-bottom-text" id="meme-bottom-text" aria-hidden="true">BOTTOM TEXT</article>
             </section>
 
             <section class="image-download">
-                <button type="button" class="download-meme"><i class="fas fa-download"></i> Descargar meme</button>
+                <button type="button" class="download-meme" aria-label="Descargar meme"><i class="fas fa-download" aria-hidden="true"></i> Descargar meme</button>
             </section>
         </main>
     </section>
@@ -72,14 +72,14 @@
     <!-- Sección imagen -->
     
     <aside class="image-section" id="image-section">
-        <button type="button" class="close-button" id="close-button"><i class="fas fa-times"></i></button>
+        <button type="button" class="close-button" id="close-button" aria-label="Botón cerrar editor de imagen"><i class="fas fa-times" aria-hidden="true"></i></button>
         <h2 class="image-section-title">IMAGEN</h2>
         <form class="image-section-form">
 
             <!-- URL -->
             <article class="section-url">
                 <label for="url" class="url-label">URL</label>
-                <input type="url" id="url" class="url">
+                <input type="url" id="url" class="url" aria-label="Ingresa la url de la imagen que quieras editar">
             </article>
           
            <!--  Fondo -->
@@ -88,12 +88,12 @@
 
                 <article class="color-filter-boxes">
                     <article class="color-box">
-                        <input type="color" class="input-color-background" id="background-color-img" value="#ffffff">
+                        <input type="color" class="input-color-background" id="background-color-img" value="#ffffff" aria-label="Cambiar color de fondo">
                         <span class="input-value">#ffffff</span>
                     </article>
 
                     <article class="filter-box">
-                        <select name="background-style" id="background-style" class="select-filter">
+                        <select name="background-style" id="background-style" class="select-filter" aria-label="Seleccionar un estilo de filtros">
                             <option value="unset">Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
@@ -140,7 +140,7 @@
             </article>
 
             <article class="section-filters-button">
-                <button type="button" class="reset-button" id="reset-button">Restablecer filtros</button>            
+                <button type="button" class="reset-button" id="reset-button" aria-label="Restablecer filtros">Restablecer filtros</button>            
             </article>
 
         </form>   
@@ -150,7 +150,7 @@
     <!-- Sección texto -->
 
     <aside class="text-section" id="text-section">
-        <button type="button" class="close-button" id="close-button"><i class="fas fa-times"></i></button>
+        <button type="button" class="close-button" id="close-button" aria-label="Botón cerrar editor de texto"><i class="fas fa-times" aria-hidden="true"></i></button>
         <h2 class="text-section-title">TEXTO</h2>
         <form class="text-section-form">
 
@@ -158,7 +158,7 @@
             
             <article class="section-top-text">
                 <label for="top-text" class="top-text-label">SUPERIOR</label>
-                <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input">
+                <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input" aria-label="Ingresa el texto de la parte superior del meme">
             </article>
 
             <article class="section-top-text-check">
@@ -169,7 +169,7 @@
             <!-- Bottom text -->
             <article class="section-bottom-text">
                 <label for="bottom-text" class="bottom-text-label">INFERIOR</label>
-                <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input">
+                <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input" aria-label="Ingresa el texto de la parte inferior del meme">
             </article>
 
             <article class="section-bottom-text-check">
@@ -180,7 +180,7 @@
             <!-- Fuente -->
             <article class="section-font">
                 <label for="font" class="font-label">FUENTE</label>
-                <select name="font" id="font" class="select-font">
+                <select name="font" id="font" class="select-font" aria-label="Elige la fuente del texto de tu meme">
                     <option value="arial" class="arial">Arial</option>
                     <option value="arial-black" class="arial-black">Arial Black</option>
                     <option value="american-typewriter" class="american-typewriter">American Typewriter</option>
@@ -194,13 +194,13 @@
 
             <article class="font-options">
                 <article class="option-size">
-                    <input type="number" value="40" id="input-size" class="size-input">
+                    <input type="number" value="40" id="input-size" class="size-input" aria-label="Elige el tamaño de la fuente">
                 </article>
 
                 <article class="option-align">
-                    <button type="button" class="button-align" id="left-align"><i class="fas fa-align-left"></i></button>
-                    <button type="button" class="button-align" id="center-align"><i class="fas fa-align-center"></i></button>
-                    <button type="button" class="button-align" id="right-align"><i class="fas fa-align-right"></i></button>
+                    <button type="button" class="button-align" id="left-align" aria-label="Botón alinear texto a la izquierda"><i class="fas fa-align-left" aria-hidden="true"></i></button>
+                    <button type="button" class="button-align" id="center-align" aria-label="Botón alinear texto al centro"><i class="fas fa-align-center" aria-hidden="true"></i></button>
+                    <button type="button" class="button-align" id="right-align" aria-label="Botón alinear text a la derecha"><i class="fas fa-align-right" aria-hidden="true"></i></button>
                 </article>
             </article>
 
@@ -211,7 +211,7 @@
                     
                     <article class="section-color"> 
                         <article class="box-color">              
-                            <input type="color" id="font-color" value="#000000" class="color-input">
+                            <input type="color" id="font-color" value="#000000" class="color-input" aria-label="Elige el color de la fuente">
                             <span class="font-color-text" id="font-color-text">#000000</span>
                         </article>  
                     </article>
@@ -223,7 +223,7 @@
 
                     <article class="section-background">
                         <article class="box-background">
-                            <input type="color" id="background-color-text" value="#ffffff" class="background-input">
+                            <input type="color" id="background-color-text" value="#ffffff" class="background-input" aria-label="Elige el color del fondo del texto">
                             <span class="font-color-background" id="font-background-text">#ffffff</span>
                         </article>
                     </article>
@@ -242,22 +242,22 @@
                 <label for="outline">CONTORNO</label>
 
                 <article class="outline-buttons">
-                    <button type="button" class="button-outline" id="none-outline">Ninguno</button>
-                    <button type="button" class="button-outline" id="white-outline">Claro</button>
-                    <button type="button" class="button-outline" id="black-outline">Oscuro</button>
+                    <button type="button" class="button-outline" id="none-outline" aria-label="Botón texto sin bordes">Ninguno</button>
+                    <button type="button" class="button-outline" id="white-outline" aria-label="Botón texto con borde claro">Claro</button>
+                    <button type="button" class="button-outline" id="black-outline" aria-label="Botón texto con borde oscuro">Oscuro</button>
                 </article>
             </article>
 
             <!-- Espaciado -->
             <article class="section-spacing">
                 <label for="font-spacing" class="spacing-label">ESPACIADO</label>
-                <input type="number" name="font-spacing" id="font-spacing" value="0" class="spacing-input">
+                <input type="number" name="font-spacing" id="font-spacing" value="0" class="spacing-input" aria-label="Espacio entre carácteres del texto">
             </article>
 
             <!-- Interlineado -->
             <article class="section-line-spacing">
                 <label for="line-spacing" class="line-spacing-label">INTERLINEADO</label>
-                <select name="line-spacing" id="line-spacing" class="select-line-spacing">
+                <select name="line-spacing" id="line-spacing" class="select-line-spacing" aria-label="Espacio de interlineado del texto">
                     <option value="0.8">0.8</option>                    
                     <option value="1">1</option>
                     <option value="1.2" selected>1.2</option>
