@@ -139,7 +139,6 @@
     padding: 0 30px;
 }
 
-
 .outline-buttons{    
     display: flex;
     justify-content: space-between;
@@ -183,4 +182,93 @@
 
 .times-new-roman{
     font-family: 'Times New Roman';
+}
+
+
+
+.option-size{
+    /* background-color: red; */
+    width: 48%;
+}
+
+.option-align{
+    /* background-color: red; */
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size-input{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+    width: 100%;
+}
+
+.button-align{
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;    
+    margin: 0 2px;
+}
+
+
+
+.section-color-background{
+    display: flex;    
+    margin-top: 15px;
+    justify-content: space-between;       
+}
+
+.section-box-color, .section-box-background{
+    width: 48%;   
+}
+
+.section-color, .section-background{
+    display: flex;
+    justify-content: space-between;      
+    width: 100%;   
+}
+
+.box-color, .box-background{
+    background-color: var(--image-text-color);    
+    padding: 5px 0;
+    border-radius: 5px;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    align-items: center;  
+    width: 100%;    
+    margin-top: -15px;       
+} 
+
+.color-input, .background-input{        
+    outline-style: none; 
+    border-radius: 50px;    
+    width: 20px;
+    height: 20px;    
+    margin-left: 5px;    
+    position: absolute;    
+}
+
+ @media (max-width: 1300px){
+    .text-section{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .text-section{
+        width: 100%;        
+        position: absolute;
+    }
+
+    .font-options{    
+        display: flex;
+        justify-content: space-between;    
+    }
 }

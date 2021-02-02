@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/image-section.css">
     <link rel="stylesheet" href="./css/text-section.css">
-    
+
     <title>Generador de memes</title>
 </head>
 <body class="body">
@@ -80,27 +80,30 @@
                 <label for="url" class="url-label">URL</label>
                 <input type="url" id="url" class="url">
             </article>
-
-            <!-- Fondo -->
-            <article class="section-background">
+          
+           <!--  Fondo -->
+           <section class="section-background-image">
                 <h3 class="background-color-label">FONDO</h3>
 
-                <article class="background-boxes">
-                    <article class="box-color-background">
-                        <input type="color" id="background-color-img" value="#ffffff" class="background-color-img">
-                        <span class="font-color-background-img" id="background-text-img">#ffffff</span>
+                <article class="color-filter-boxes">
+                    <article class="color-box">
+                        <input type="color" class="input-color-background" id="background-color-img" value="#ffffff">
+                        <span class="input-value">#ffffff</span>
                     </article>
 
-                    <select name="background-style" id="background-style" class="background-select">
-                        <option value="unset">Ninguno</option>
-                        <option value="lighten">Aclarar</option>
-                        <option value="darken">Oscurecer</option>
-                        <option value="difference">Diferencia</option>
-                        <option value="luminosity">Luminosidad</option>
-                        <option value="multiply">Multiplicar</option>                    
-                    </select>
+                    <article class="filter-box">
+                        <select name="background-style" id="background-style" class="select-filter">
+                            <option value="unset">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>                    
+                        </select>
+                    </article>
                 </article>
-            </article>
+
+           </section>
 
             <!-- Filtros -->
             <article class="section-filters">

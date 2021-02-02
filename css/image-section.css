@@ -2,10 +2,9 @@
 
 .image-section{
     background-color: var(--aside-color);    
-    width: 25%;
-    /* height: 100vh;  */
+    width: 25%;    
     color: var(--letter-color-principal);  
-    /* display: none; */    
+    /* display: none; */       
 }
 
 /* Titulo */
@@ -31,8 +30,7 @@
 
 .section-background{
     display: flex;
-    flex-direction: column;
-    /* background-color: red; */
+    flex-direction: column;    
     width: 100%
 }
 
@@ -40,23 +38,12 @@
     padding: 5px;
     border-radius: 5px;
     outline-style: none;
-    border: none;
-    /* display: none; */
+    border: none;    
 }
 
 .background-select{
     width: 45%;
 }
-
-/* .background-color{
-    height: 28px;
-    border-radius: 5px;
-    outline-style: none; 
-    border-radius: 50px;    
-    width: 20px;
-    height: 20px;
-    background-color: green;
-} */
 
 .box-color-background{
     background-color: var(--letter-color-principal);
@@ -65,7 +52,7 @@
     font-weight: 300;
     display: flex;
     align-items: center;  
-    width: 45%;   
+    /* width: 100%;    */
   
 }
 
@@ -81,13 +68,14 @@
 .background-boxes{
     display: flex;
     justify-content: space-between;      
-    width: 16rem; 
+    /* width: 16rem;  */
 }
 
 .url-label, .filters-label{
     padding: 7px 0;
     font-size: 1.1rem;
     font-weight: 500;
+    width: 100%;  
 }
 
 .background-color-label{
@@ -101,10 +89,11 @@
     outline-style: none; 
     border-radius: 50px;    
     width: 20px;
-    height: 20px;    
-    /* margin-left: 5px;     */
+    height: 20px;        
     position: absolute; 
 }
+
+/* FILTROS */
 
 .filter-option-label{
     font-size: 0.9rem;
@@ -167,4 +156,80 @@
     transition: all 0.8s ease;
     outline: none;
     border: none;
+}
+
+
+/* FONDO */
+
+.color-box{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 5px;  
+    width: 48%;   
+}
+
+.filter-box{    
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+
+.color-filter-boxes{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-color-backgroundd{
+    outline-style: none;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.input-value{
+    color: black;
+    padding: 0 5px;
+}
+
+.select-filter{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+@media (max-width: 1300px){
+    .image-section{
+        display: none;        
+        width: 450px;        
+    }
+}
+
+@media (max-width: 700px){
+    .image-section{
+        width: 100%;        
+        position: absolute;
+    }
+   
+    /* Boton */
+    .section-filters-button{        
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: -5%;
+    }
+
+    .reset-button{
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .reset-button:hover{
+        padding: 2%;
+    }
 }
