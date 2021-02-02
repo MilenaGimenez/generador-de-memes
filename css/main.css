@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;    
-    background-color: var(--letter-color-secundary);
+    background-color: var(--color-secundary);
 }
 
 .meme-top-text, .meme-bottom-text{
@@ -44,7 +44,7 @@
 
 .download-meme{
     background-color: var(--button-color);
-    color: var(--letter-color-principal);
+    color: var(--color-principal);
     font-size: 1rem;
     padding: 8% 3%;
     width: 100%;
@@ -56,7 +56,7 @@
 }
 
 .download-meme:hover{
-    background-color: var(--letter-color-principal);
+    background-color: var(--color-principal);
     color: var(--button-color);
     font-size: 1rem;
     padding: 8% 3%;

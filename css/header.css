@@ -8,23 +8,21 @@
 :root{    
     --nav-color: #191E2B;    
     --button-color: #252935;    
-    --aside-color: #393E49;    
-    --gray-light: #30343F;     
+    --aside-color: #393E49;       
     --range-color: #9E9E9E;
-    --letter-color-principal: #fff;    
-    --letter-color-secundary: #000;   
+    --color-principal: #fff;    
+    --color-secundary: #000;   
     --image-text-color: #fff; 
     --image-meme-color: #000;
 }
 
 body.light-theme{
-    --nav-color: #ffffff;    
-    --button-color: #ffffff;    
-    --aside-color: #cccccc;    
-    --gray-light: #0a42db;     
-    --range-color: #df0e0e;
-    --letter-color-principal: rgb(131, 131, 131);    
-    --letter-color-secundary: rgb(255, 255, 255);  
+    --nav-color: #e9e9e9;    
+    --button-color: #dddddd;    
+    --aside-color: #cccccc;  
+    --range-color: #b9b9b9;
+    --color-principal: rgb(119, 119, 119);    
+    --color-secundary: rgb(255, 255, 255);  
     --image-text-color: #fff; 
     --image-meme-color: #000;
 }
@@ -63,7 +61,7 @@ body.light-theme{
 
 .nav-title{
     font-size: 2rem;    
-    color: var(--letter-color-principal);    
+    color: var(--color-principal);    
 }
 
 .nav-title-image{
@@ -91,15 +89,15 @@ body.light-theme{
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    color: var(--letter-color-principal); 
+    color: var(--color-principal); 
 }
 
 .nav-item:hover{
     padding: 3.5%;
     border-radius: 5px;
-    background-color: var(--letter-color-principal);   
+    background-color: var(--color-principal);   
     margin-bottom: 5%; 
-    color: var(--letter-color-secundary); 
+    color: var(--color-secundary); 
     transition: all 0.8s ease;
 }
 
@@ -109,16 +107,16 @@ body.light-theme{
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    color: var(--letter-color-principal); 
+    color: var(--color-principal); 
     display: none;
 }
 
 .nav-item-light:hover{
     padding: 3.5%;
     border-radius: 5px;
-    background-color: var(--letter-color-principal);   
+    background-color: var(--color-principal);   
     margin-bottom: 5%; 
-    color: var(--letter-color-secundary); 
+    color: var(--color-secundary); 
     transition: all 0.8s ease;
     /* display: none; */
 }
@@ -129,15 +127,15 @@ body.light-theme{
     margin-bottom: 5%; 
     cursor: pointer;
     text-align: center;   
-    color: var(--letter-color-principal);     
+    color: var(--color-principal);     
 }
 
 .nav-item-dark:hover{
     padding: 3.5%;
     border-radius: 5px;
-    background-color: var(--letter-color-principal);   
+    background-color: var(--color-principal);   
     margin-bottom: 5%; 
-    color: var(--letter-color-secundary); 
+    color: var(--color-secundary); 
     transition: all 0.8s ease;    
 }
 

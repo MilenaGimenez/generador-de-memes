@@ -3,7 +3,7 @@
 .image-section{
     background-color: var(--aside-color);    
     width: 25%;    
-    color: var(--letter-color-principal);  
+    color: var(--color-principal);  
     /* display: none; */       
 }
 
@@ -50,7 +50,7 @@
 }
 
 .box-color-background{
-    background-color: var(--letter-color-principal);
+    background-color: var(--color-principal);
     padding: 5px;
     border-radius: 5px;    
     font-weight: 300;
@@ -106,7 +106,7 @@
 }
 
 .filter-range{
-    background-color: var(--letter-color-principal);
+    background-color: var(--color-principal);
     border-radius: 10px;
     appearance: none;
     height: 8px;
@@ -141,7 +141,7 @@
     cursor: pointer;
     text-align: center;   
     color: var(--button-color); 
-    background-color: var(--letter-color-principal);  
+    background-color: var(--color-principal);  
     transition: all 0.8s ease;
     outline: none;
     border: none;    
@@ -155,7 +155,7 @@
     cursor: pointer;
     text-align: center;   
     background-color: var(--button-color); 
-    color: var(--letter-color-principal);  
+    color: var(--color-principal);  
     transition: all 0.8s ease;
     outline: none;
     border: none;
