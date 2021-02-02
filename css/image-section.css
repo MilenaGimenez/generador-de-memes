@@ -7,6 +7,10 @@
     /* display: none; */       
 }
 
+.close-button{
+    display: none;
+}
+
 /* Titulo */
 
 .image-section-title{    
@@ -140,8 +144,7 @@
     background-color: var(--letter-color-principal);  
     transition: all 0.8s ease;
     outline: none;
-    border: none;
-    
+    border: none;    
 }
 
 .reset-button:hover{
@@ -181,24 +184,25 @@
     justify-content: space-between;
 }
 
-.input-color-backgroundd{
+.input-color-background{
     outline-style: none;
     border-radius: 20px;
     width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    position: absolute;
+    height: 20px;    
+    position: absolute;   
 }
 
-.input-value{
-    color: black;
-    padding: 0 5px;
+.input-value{    
+    padding: 0 30px;
+    color: black;    
+    font-weight: 300;
 }
 
 .select-filter{
     width: 100%;
     border-radius: 5px;
     padding: 5px;
+    border: none;
 }
 
 
@@ -231,5 +235,19 @@
 
     .reset-button:hover{
         padding: 2%;
+    }
+
+    .close-button{
+        display: block;        
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: transparent;
+        font-size: 1rem;
     }
 }

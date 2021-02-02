@@ -1,5 +1,5 @@
 .main{    
-    background-image: url(../assets/img/background.svg);
+    background-image: url(../assets/img/background.png);
     background-repeat: no-repeat;    
     background-size: cover;
     background-position: center;    
@@ -69,7 +69,7 @@
 }
 
 .light-background{
-    background-image: url(../assets/img/background-light.svg);
+    background-image: url(../assets/img/background-light.png);
     background-repeat: no-repeat;    
     background-size: cover;
     background-position: center;       

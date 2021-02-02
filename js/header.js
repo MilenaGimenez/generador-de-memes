@@ -4,9 +4,13 @@ const darkMode = document.getElementById('dark-mode');
 const background = document.getElementById('main');
 const imageButton = document.getElementById('image-button');
 const textButton = document.getElementById('text-button');
+const closeButton = document.getElementById('close-button');
 
 const imageSection = document.getElementById('image-section');
 const textSection = document.getElementById('text-section');
+
+
+textSection.classList.add('display-none');
 
 lightMode.addEventListener('click', () => {    
         document.body.classList.add('light-theme')        
@@ -33,4 +37,10 @@ textButton.addEventListener('click', () => {
 imageButton.addEventListener('click', () => {
     imageSection.style.display = 'block'
     textSection.style.display = 'none'
+});
+
+closeButton.addEventListener('click', () => {
+    textSection.classList.remove('display-none')   
+    textSection.style.display= 'none';
+    imageSection.style.display= 'none';
 });

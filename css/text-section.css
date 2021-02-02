@@ -25,7 +25,7 @@
     background-color: var(--aside-color);    
     width: 25%;    
     color: var(--letter-color-principal);    
-    display: none;
+    /* display: none; */
 }
 
 /* Titulo */
