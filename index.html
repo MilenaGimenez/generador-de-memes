@@ -77,10 +77,10 @@
         <form class="image-section-form">
 
             <!-- URL -->
-            <article class="section-url">
+            <section class="section-url">
                 <label for="url" class="url-label">URL</label>
                 <input type="url" id="url" class="url" aria-label="Ingresa la url de la imagen que quieras editar">
-            </article>
+            </section>
           
            <!--  Fondo -->
            <section class="section-background-image">
@@ -107,7 +107,7 @@
            </section>
 
             <!-- Filtros -->
-            <article class="section-filters">
+            <section class="section-filters">
                 <h3 class="filters-label">FILTROS</h3>
                 
                     <label for="brightness" class="filter-option-label">BRILLO</label>
@@ -137,11 +137,11 @@
                     <label for="invert" class="filter-option-label">NEGATIVO</label>
                     <input type="range" id="invert" class="filter-range" min="0" max="1" step="0.1" value="0">
                     
-            </article>
+            </section>
 
-            <article class="section-filters-button">
+            <section class="section-filters-button">
                 <button type="button" class="reset-button" id="reset-button" aria-label="Restablecer filtros">Restablecer filtros</button>            
-            </article>
+            </section>
 
         </form>   
 
@@ -156,29 +156,29 @@
 
             <!-- Top text -->
             
-            <article class="section-top-text">
+            <section class="section-top-text">
                 <label for="top-text" class="top-text-label">SUPERIOR</label>
                 <input type="text" name="top-text" value="TOP TEXT" id="top-text" class="top-text-input" aria-label="Ingresa el texto de la parte superior del meme">
-            </article>
+            </section>
 
-            <article class="section-top-text-check">
+            <section class="section-top-text-check">
                 <input type="checkbox" id="top-text-check" class="top-text-check-input">
                 <label for="top-text-check" class="top-text-check-label">Sin texto superior</label>
-            </article>
+            </section>
 
             <!-- Bottom text -->
-            <article class="section-bottom-text">
+            <section class="section-bottom-text">
                 <label for="bottom-text" class="bottom-text-label">INFERIOR</label>
                 <input type="text" name="bottom-text" value="BOTTOM TEXT" id="bottom-text" class="bottom-text-input" aria-label="Ingresa el texto de la parte inferior del meme">
-            </article>
+            </section>
 
-            <article class="section-bottom-text-check">
+            <section class="section-bottom-text-check">
                 <input type="checkbox" id="bottom-text-check" class="bottom-text-check-input">
                 <label for="bottom-text-check" class="bottom-text-check-label">Sin texto inferior</label>
-            </article>
+            </section>
 
             <!-- Fuente -->
-            <article class="section-font">
+            <section class="section-font">
                 <label for="font" class="font-label">FUENTE</label>
                 <select name="font" id="font" class="select-font" aria-label="Elige la fuente del texto de tu meme">
                     <option value="arial" class="arial">Arial</option>
@@ -190,9 +190,9 @@
                     <option value="verdana" class="verdana">Verdana</option>
                     <option value="times-new-roman" class="times-new-roman">Times New Roman</option>
                 </select>
-            </article>
+            </section>
 
-            <article class="font-options">
+            <section class="font-options">
                 <article class="option-size">
                     <input type="number" value="40" id="input-size" class="size-input" aria-label="Elige el tamaño de la fuente">
                 </article>
@@ -202,7 +202,7 @@
                     <button type="button" class="button-align" id="center-align" aria-label="Botón alinear texto al centro"><i class="fas fa-align-center" aria-hidden="true"></i></button>
                     <button type="button" class="button-align" id="right-align" aria-label="Botón alinear text a la derecha"><i class="fas fa-align-right" aria-hidden="true"></i></button>
                 </article>
-            </article>
+            </section>
 
             <!-- Color -->
             <section class="section-color-background">
@@ -231,13 +231,13 @@
                             
             </section>
 
-            <article class="section-color-check">
+            <section class="section-color-check">
                 <input type="checkbox" id="background-none" class="color-check-input">
                 <label for="background-none" class="color-check-label">Fondo transparente</label>
-            </article>            
+            </section>            
 
             <!-- Contorno -->
-            <article class="section-outline">
+            <section class="section-outline">
                 
                 <label for="outline">CONTORNO</label>
 
@@ -246,16 +246,16 @@
                     <button type="button" class="button-outline" id="white-outline" aria-label="Botón texto con borde claro">Claro</button>
                     <button type="button" class="button-outline" id="black-outline" aria-label="Botón texto con borde oscuro">Oscuro</button>
                 </article>
-            </article>
+            </section>
 
             <!-- Espaciado -->
-            <article class="section-spacing">
+            <section class="section-spacing">
                 <label for="font-spacing" class="spacing-label">ESPACIADO</label>
                 <input type="number" name="font-spacing" id="font-spacing" value="0" class="spacing-input" aria-label="Espacio entre carácteres del texto">
-            </article>
+            </section>
 
             <!-- Interlineado -->
-            <article class="section-line-spacing">
+            <section class="section-line-spacing">
                 <label for="line-spacing" class="line-spacing-label">INTERLINEADO</label>
                 <select name="line-spacing" id="line-spacing" class="select-line-spacing" aria-label="Espacio de interlineado del texto">
                     <option value="0.8">0.8</option>                    
@@ -265,7 +265,7 @@
                     <option value="2">2</option>
                     <option value="2.5">2.5</option>
                 </select>
-            </article>
+            </section>
         </form>
     </aside>
 
