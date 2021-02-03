@@ -90,6 +90,7 @@ body.light-theme{
     cursor: pointer;
     text-align: center;   
     color: var(--color-principal); 
+    transition: all 0.8s ease;
 }
 
 .nav-item:hover{

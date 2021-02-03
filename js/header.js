@@ -5,6 +5,8 @@ const background = document.getElementById('main');
 const imageButton = document.getElementById('image-button');
 const textButton = document.getElementById('text-button');
 const closeButton = document.getElementById('close-button');
+const downloadMeme = document.getElementById('descargar');
+const memeSection = document.getElementById('meme-section')
 
 const imageSection = document.getElementById('image-section');
 const textSection = document.getElementById('text-section');
@@ -43,4 +45,13 @@ closeButton.addEventListener('click', () => {
     textSection.classList.remove('display-none')   
     textSection.style.display= 'none';
     imageSection.style.display= 'none';
+});
+
+
+downloadMeme.addEventListener('click', (e) => {    
+    domtoimage.toBlob(memeSection)
+    .then(function (blob) {
+        window.saveAs(blob, 'mi-meme.png');
+    });
+    
 });

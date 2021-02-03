@@ -57,14 +57,14 @@
         <!--  Vista previa del meme  -->
 
         <main class="main" id="main">            
-            <section class="meme-section">
+            <section class="meme-section" id="meme-section">
                 <article class="meme-top-text" id="meme-top-text" aria-hidden="true">TOP TEXT</article>
                 <article class="meme-image" id="meme-image" aria-label="Imagen a editar"></article>
-                <article class="meme-bottom-text" id="meme-bottom-text" aria-hidden="true">BOTTOM TEXT</article>
+                <article class="meme-bottom-text" id="meme-bottom-text" aria-hidden="true">BOTTOM TEXT</article>   
             </section>
 
             <section class="image-download">
-                <button type="button" class="download-meme" aria-label="Descargar meme"><i class="fas fa-download" aria-hidden="true"></i> Descargar meme</button>
+                <button type="button" class="download-meme" aria-label="Descargar meme" id="descargar"><i class="fas fa-download" aria-hidden="true"></i> Descargar meme</button>
             </section>
         </main>
     </section>
@@ -268,6 +268,8 @@
             </section>
         </form>
     </aside>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
 
     <script src="./js/header.js"></script>
     <script src="./js/image-section.js"></script>

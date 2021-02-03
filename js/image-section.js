@@ -30,7 +30,7 @@ backgroundColorImg.addEventListener('input', (event) => {
 
 // Filtros
 
-brightness.addEventListener('change', (event) => {
+/* brightness.addEventListener('change', (event) => {
     let value = event.target.value    
     memeImage.style.filter = `brightness(${value})`;
 });
@@ -73,7 +73,7 @@ saturation.addEventListener('change', (event) => {
 invert.addEventListener('change', (event) => {
     let value = event.target.value    
     memeImage.style.filter = `invert(${value})`;
-});
+}); */
 
 //Botón reset filtros
 resetButton.addEventListener('click', () => {   
@@ -87,3 +87,84 @@ resetButton.addEventListener('click', () => {
    saturation.value = 100;
    invert.value = 0;
 });
+
+
+/* brightness.addEventListener('change', () => {    
+    memeImage.style.filter = `brightness(${brightness.value})`; 
+});
+
+opacity.addEventListener('change', () => {
+    memeImage.style.opacity = opacity.value;
+});
+
+contrast.addEventListener('change', () => {      
+    memeImage.style.filter = `contrast(${contrast.value}%)`;
+});
+
+blur.addEventListener('change', () => {      
+    memeImage.style.filter = `blur(${blur.value}px)`;
+});
+
+grayscale.addEventListener('change', () => {      
+    memeImage.style.filter = `grayscale(${grayscale.value}%)`;
+});
+
+sepia.addEventListener('change', () => {      
+    memeImage.style.filter = `sepia(${sepia.value}%)`;
+});
+
+hue.addEventListener('change', () => {    
+    memeImage.style.filter = `hue-rotate(${hue.value}deg)`;
+});
+
+saturation.addEventListener('change', () => {    
+    memeImage.style.filter = `saturate(${saturation.value}%)`;   
+});
+
+invert.addEventListener('change', () => {      
+    memeImage.style.filter = `invert(${invert.value})`;
+}); */
+
+//Botón reset filtros
+/* resetButton.addEventListener('click', () => {   
+   brightness.value = 1;
+   opacity.value = 1;
+   contrast.value = 100;
+   blur.value = 0;
+   grayscale.value = 0;
+   sepia.value = 0;
+   hue.value = 0;
+   saturation.value = 100;
+   invert.value = 0;
+});*/
+
+
+// prueba
+
+const filtrosImagen = () =>{
+    memeImage.style.filter = `brightness(${brightness.value}) opacity(${opacity.value}) contrast(${contrast.value}%) blur(${blur.value}px) grayscale(${grayscale.value}%) sepia(${sepia.value}%) hue-rotate(${hue.value}deg) saturate(${saturation.value}%) invert(${invert.value})`;
+};
+
+brightness.addEventListener('change', filtrosImagen);
+opacity.addEventListener('change', filtrosImagen);
+contrast.addEventListener('change', filtrosImagen);
+blur.addEventListener('change', filtrosImagen);
+grayscale.addEventListener('change', filtrosImagen);
+sepia.addEventListener('change', filtrosImagen);
+hue.addEventListener('change', filtrosImagen);
+saturation.addEventListener('change', filtrosImagen);
+invert.addEventListener('change', filtrosImagen);
+
+resetButton.addEventListener('click', () => {   
+    brightness.value = 1;
+    opacity.value = 1;
+    contrast.value = 100;
+    blur.value = 0;
+    grayscale.value = 0;
+    sepia.value = 0;
+    hue.value = 0;
+    saturation.value = 100;
+    invert.value = 0;
+
+    filtrosImagen()
+ });
