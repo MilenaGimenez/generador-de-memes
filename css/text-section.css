@@ -23,9 +23,13 @@
 
 .text-section{
     background-color: var(--aside-color);    
-    width: 25%;    
+    /* width: 25%;   */  
+    width: 18rem;
     color: var(--color-principal);    
-    /* display: none; */
+    /* display: none; */    
+    right: -25%;
+    position: fixed;
+    height: 100vh;
 }
 
 /* Titulo */
@@ -258,6 +262,21 @@
  @media (max-width: 1300px){
     .text-section{
         display: none;
+        /* right: -30%; */
+    }
+
+    .close-button{
+        display: block;        
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: transparent;
+        font-size: 1rem;
     }
 }
 
