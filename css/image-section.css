@@ -4,8 +4,7 @@
     background-color: var(--aside-color);    
     /* width: 25%;    */ 
     width: 18rem;
-    color: var(--color-principal);  
-    /* display: none;    */ 
+    color: var(--color-principal);      
     position: fixed;
     right: 0px;    
     height: 100vh;
@@ -49,36 +48,6 @@
     border: none;    
 }
 
-.background-select{
-    width: 45%;
-}
-
-.box-color-background{
-    background-color: var(--color-principal);
-    padding: 5px;
-    border-radius: 5px;    
-    font-weight: 300;
-    display: flex;
-    align-items: center;  
-    /* width: 100%;    */
-  
-}
-
-.font-color-background{
-    padding: 0 5px;
-}
-
-.font-color-background-img{
-    color: black;    
-    margin-left: 30px;   
-}
-
-.background-boxes{
-    display: flex;
-    justify-content: space-between;      
-    /* width: 16rem;  */
-}
-
 .url-label, .filters-label{
     padding: 7px 0;
     font-size: 1.1rem;
@@ -91,14 +60,6 @@
     font-size: 1.1rem;
     font-weight: 500;    
     width: 16rem;  
-}
-
-.background-color-img{    
-    outline-style: none; 
-    border-radius: 50px;    
-    width: 20px;
-    height: 20px;        
-    position: absolute; 
 }
 
 /* FILTROS */
@@ -212,10 +173,7 @@
 
 @media (max-width: 1300px){
     .image-section{
-        display: none;
-        /* right: 100px; */
-        /* position: absolute;   */      
-        /* width: 450px;    */     
+        display: none;            
     }
 
     .close-button{
@@ -237,7 +195,7 @@
     .image-section{
         width: 100%;        
         position: absolute;
-        height: 100vh;
+        height: 135vh;        
     }
    
     /* Boton */
@@ -257,18 +215,4 @@
     .reset-button:hover{
         padding: 2%;
     }
-
-/*     .close-button{
-        display: block;        
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        border-radius: 3px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        color: white;
-        background-color: transparent;
-        font-size: 1rem;
-    } */
 }

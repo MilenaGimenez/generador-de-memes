@@ -11,7 +11,7 @@
 .meme-section{    
     max-width: 610px;
     width: 100%;
-    height: 580px;
+    height: 580px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,34 +37,35 @@
     width: 100%;
 }
 
-.image-download{
-    width: 15%;
+.image-download{    
     margin: 20px 0;
 }
 
 .download-meme{
     background-color: var(--button-color);
     color: var(--color-principal);
-    font-size: 1rem;
-    padding: 8% 3%;
-    width: 100%;
+    font-size: 1rem;    
+    padding: 15px 10px;
+    width: 180px;
     outline: none;
     border: none;
     border-radius: 5px;
     box-shadow: none;
     cursor: pointer;
+    transition: all 0.8s ease; 
 }
 
 .download-meme:hover{
     background-color: var(--color-principal);
     color: var(--button-color);
-    font-size: 1rem;
-    padding: 8% 3%;
-    width: 100%;
+    font-size: 1rem;    
+    padding: 15px 10px;
+    width: 180px;
     outline: none;
     border: none;
     border-radius: 5px;
-    box-shadow: none;  
+    box-shadow: none;
+    cursor: pointer;
     transition: all 0.8s ease;  
 }
 
@@ -73,4 +74,31 @@
     background-repeat: no-repeat;    
     background-size: cover;
     background-position: center;       
+}
+
+@media (max-width: 700px){
+    .meme-section{        
+        width: 90%;                 
+    }
+
+    .meme-top-text, .meme-bottom-text{   
+        font-size: 2rem;                   
+    }
+
+    .download-meme{       
+        padding: 15px 10px;
+        width: 100%;       
+    }
+}
+
+@media (max-width: 600px){
+    .meme-top-text, .meme-bottom-text{   
+        font-size: 2rem;                   
+    }
+
+    .download-meme{       
+        padding: 15px 10px;
+        width: 100%;     
+        font-size: 0.9rem;  
+    }
 }

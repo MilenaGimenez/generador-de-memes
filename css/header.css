@@ -27,6 +27,27 @@ body.light-theme{
     --image-meme-color: #000;
 }
 
+@font-face{
+    font-family: "Andale mono";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/andale-mono.ttf) format("truetype");      
+}
+
+@font-face{
+    font-family: "arial-black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/arial-black.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "american-typewriter";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url(../assets/fonts/american-typewriter.ttf) format("truetype"); 
+}
+
 .body{
     display: flex;    
 }
@@ -54,24 +75,22 @@ body.light-theme{
 .nav-title-box{
     display: flex;
     align-items: center;   
-    justify-content: space-around; 
-    width: 38%;
-    margin: 1.5%;        
+    justify-content: space-between; 
+    width: 430px;
+    margin: 1.3%;    
 }
 
 .nav-title{
     font-size: 2rem;    
-    color: var(--color-principal);    
+    color: var(--color-principal);  
 }
 
 .nav-title-image{
-    height: 3.8rem;
-    margin-left: 10px;
+    height: 3.8rem;   
 }
 
 .nav-title-image:hover{
     height: 3.8rem;
-    margin-left: 10px;
     transition: .8s ease-in-out;
     transform: rotate(360deg)
 }
@@ -80,11 +99,11 @@ body.light-theme{
     display: flex;
     justify-content: space-around;
     list-style: none;    
-    width: 30%;    
+    width: 350px;      
 }
 
-.nav-item{
-    padding: 3.5%;
+.nav-item{    
+    padding: 10px;
     border-radius: 5px;    
     margin-bottom: 5%; 
     cursor: pointer;
@@ -93,8 +112,8 @@ body.light-theme{
     transition: all 0.8s ease;
 }
 
-.nav-item:hover{
-    padding: 3.5%;
+.nav-item:hover{    
+    padding: 10px;
     border-radius: 5px;
     background-color: var(--color-principal);   
     margin-bottom: 5%; 
@@ -102,8 +121,8 @@ body.light-theme{
     transition: all 0.8s ease;
 }
 
-.nav-item-light{
-    padding: 3.5%;
+.nav-item-light{    
+    padding: 10px;
     border-radius: 5px;    
     margin-bottom: 5%; 
     cursor: pointer;
@@ -112,18 +131,8 @@ body.light-theme{
     display: none;
 }
 
-.nav-item-light:hover{
-    padding: 3.5%;
-    border-radius: 5px;
-    background-color: var(--color-principal);   
-    margin-bottom: 5%; 
-    color: var(--color-secundary); 
-    transition: all 0.8s ease;
-    /* display: none; */
-}
-
-.nav-item-dark{
-    padding: 3.5%;
+.nav-item-dark{    
+    padding: 10px;
     border-radius: 5px;    
     margin-bottom: 5%; 
     cursor: pointer;
@@ -131,8 +140,8 @@ body.light-theme{
     color: var(--color-principal);     
 }
 
-.nav-item-dark:hover{
-    padding: 3.5%;
+.nav-item-light:hover, .nav-item-dark:hover{    
+    padding: 10px;
     border-radius: 5px;
     background-color: var(--color-principal);   
     margin-bottom: 5%; 
@@ -146,4 +155,31 @@ body.light-theme{
 
 .display-block{
     display: block;
+}
+
+@media (max-width: 500px){
+    .nav-title-box{        
+        width: 85%;    
+        margin: 10px 0;        
+    }
+    
+    .nav-title{
+        font-size: 1.8em; 
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    .nav-title-image{        
+        height: 3rem;        
+    }
+
+    .nav-section{         
+        width: 70%;         
+        justify-content: space-between;
+    }
+    
+    .nav-item, .nav-item-dark, .nav-item-light{        
+        padding: 5px; 
+        font-size: 0.9rem;          
+    }
 }

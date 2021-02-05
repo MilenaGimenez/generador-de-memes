@@ -1,23 +1,4 @@
-@font-face{
-    font-family: "Andale mono";
-    font-style: normal;
-    font-weight: normal;
-    src: local("?"), url(../assets/fonts/andale-mono.ttf) format("truetype");      
-}
 
-@font-face{
-    font-family: "arial-black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("?"), url(../assets/fonts/arial-black.ttf) format("truetype");
-}
-
-@font-face{
-    font-family: "american-typewriter";
-    font-style: normal;
-    font-weight: normal;
-    src: local("?"), url(../assets/fonts/american-typewriter.ttf) format("truetype"); 
-}
 
 /* Contenedor principal*/
 
@@ -25,8 +6,7 @@
     background-color: var(--aside-color);    
     /* width: 25%;   */  
     width: 18rem;
-    color: var(--color-principal);    
-    /* display: none; */    
+    color: var(--color-principal);          
     right: -25%;
     position: fixed;
     height: 100vh;
@@ -190,13 +170,11 @@
 
 
 
-.option-size{
-    /* background-color: red; */
+.option-size{    
     width: 48%;
 }
 
 .option-align{
-    /* background-color: red; */
     width: 48%;
     display: flex;
     justify-content: space-between;
@@ -219,7 +197,6 @@
     width: 100%;    
     margin: 0 2px;
 }
-
 
 
 .section-color-background{
@@ -284,6 +261,7 @@
     .text-section{
         width: 100%;        
         position: absolute;
+        height: 135vh;    
     }
 
     .font-options{    
