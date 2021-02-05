@@ -110,13 +110,35 @@
     margin-top: -15px;       
 } 
 
-.color-input, .background-input{        
-    outline-style: none; 
-    border-radius: 50px;    
-    width: 20px;
-    height: 20px;    
+.color-input, .background-input{    
+    outline-style: none;        
     margin-left: 5px;    
-    position: absolute;    
+    position: absolute;      
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 999px;
+    overflow: hidden;
+    outline: none;
+    border: 0;
+}
+
+.color-input[type="color" i]::-webkit-color-swatch-wrapper, .background-input[type="color" i]::-webkit-color-swatch-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border: 1px solid var(--button-color);
+    border-radius: 999px;
+}
+
+.color-input[type="color" i]::-webkit-color-swatch, .background-input[type="color" i]::-webkit-color-swatch {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 999px;    
 }
 
 .font-color-text, .font-color-background{
