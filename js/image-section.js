@@ -12,6 +12,7 @@ const hue = document.getElementById('hue-rotation');
 const saturation = document.getElementById('saturation');
 const invert = document.getElementById('invert');
 const resetButton = document.getElementById('reset-button');
+const backgroundStyle = document.getElementById('background-style');
 
 url.addEventListener('keyup', (event) => {
     let value = event.target.value;
@@ -168,3 +169,9 @@ resetButton.addEventListener('click', () => {
 
     filtrosImagen()
  });
+
+ // Filtros mezcla
+ backgroundStyle.addEventListener('change', (event) => {
+     let value = event.target.value;
+     memeImage.style.backgroundBlendMode = event.target.value;
+ })

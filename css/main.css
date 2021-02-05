@@ -35,6 +35,7 @@
     background-color: var(--image-meme-color); 
     height: 100%;
     width: 100%;
+   /*  background-blend-mode: multiply; */
 }
 
 .image-download{    
