@@ -173,6 +173,10 @@ body.light-theme{
         height: 3rem;        
     }
 
+    .nav-title-image:hover{        
+        height: 3rem;        
+    }
+
     .nav-section{         
         width: 70%;         
         justify-content: space-between;
