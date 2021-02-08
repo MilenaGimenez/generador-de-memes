@@ -262,6 +262,7 @@
     .text-section{
         display: none;
         /* right: -30%; */
+        overflow: scroll;    
     }
 
     .close-button{
@@ -283,7 +284,8 @@
     .text-section{
         width: 100%;        
         position: absolute;
-        height: 58rem;  
+        /* height: 58rem;   */
+        height: auto; 
     }
 
     .font-options{    

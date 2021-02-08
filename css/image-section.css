@@ -6,7 +6,8 @@
     width: 18rem;
     color: var(--color-principal);      
     position: fixed;
-    right: 0px;    
+    right: 0px;  
+    /* height: auto;   */
     height: 100vh;
 }
 
@@ -195,7 +196,8 @@
 
 @media (max-width: 1300px){
     .image-section{
-        display: none;            
+        display: none;        
+        overflow: scroll;    
     }
 
     .close-button{
@@ -217,7 +219,8 @@
     .image-section{
         width: 100%;        
         position: absolute;
-        height: 58rem;        
+        /* height: 58rem; */    
+        height: auto;    
     }
    
     /* Boton */
@@ -232,15 +235,17 @@
         padding: 2%;
         display: flex;
         justify-content: center;
+        margin: 29px 0;
     }
 
     .reset-button:hover{
         padding: 2%;
+        margin: 29px 0;
     }
 }
 
 @media (max-width: 450px){
     .image-section{        
-        height: 52rem; 
+        /* height: 52rem;  */
     }
 }
