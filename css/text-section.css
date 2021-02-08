@@ -291,3 +291,9 @@
         justify-content: space-between;    
     }
 }
+
+@media (min-width: 300px){
+    .text-section{        
+        height: 175vh;        
+    }
+}

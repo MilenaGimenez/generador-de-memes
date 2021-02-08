@@ -105,6 +105,7 @@ backgroundNone.addEventListener('click', (event) => {
     memeTopText.style.backgroundColor = 'transparent'
     memeBottomText.style.backgroundColor = 'transparent'
     memeTopText.style.position = 'absolute'
+    /* memeTopText.style.marginTop = '0.5px' */
     memeBottomText.style.position = 'absolute'
     memeTopText.style.top = '0'
     memeBottomText.style.bottom = '0'

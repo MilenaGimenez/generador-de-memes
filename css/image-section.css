@@ -238,3 +238,9 @@
         padding: 2%;
     }
 }
+
+@media (min-width: 300px){
+    .image-section{        
+        height: 175vh;        
+    }
+}
