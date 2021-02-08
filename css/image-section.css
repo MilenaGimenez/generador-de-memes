@@ -217,7 +217,7 @@
     .image-section{
         width: 100%;        
         position: absolute;
-        height: 135vh;        
+        height: 58rem;        
     }
    
     /* Boton */
@@ -239,8 +239,8 @@
     }
 }
 
-@media (min-width: 300px){
+@media (max-width: 450px){
     .image-section{        
-        height: 175vh;        
+        height: 52rem; 
     }
 }

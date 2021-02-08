@@ -181,8 +181,13 @@ body.light-theme{
         width: 70%;         
         justify-content: space-between;
     }
-    
+        
     .nav-item, .nav-item-dark, .nav-item-light{        
+        padding: 5px; 
+        font-size: 0.9rem;          
+    }
+
+    .nav-item:hover, .nav-item-dark:hover, .nav-item-light:hover{        
         padding: 5px; 
         font-size: 0.9rem;          
     }

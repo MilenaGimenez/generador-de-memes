@@ -283,7 +283,7 @@
     .text-section{
         width: 100%;        
         position: absolute;
-        height: 135vh;    
+        height: 58rem;  
     }
 
     .font-options{    
@@ -292,8 +292,8 @@
     }
 }
 
-@media (min-width: 300px){
+@media (max-width: 450px){
     .text-section{        
-        height: 175vh;        
+        height: 52rem; 
     }
 }
