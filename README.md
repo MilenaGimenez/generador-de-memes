@@ -23,6 +23,11 @@
 
 <br>
 
+### 😲 Si pasas el mouse por encima del troll, reaccionará!
+
+<br>
+
+![imagen](./assets/img/meme-readme.gif)
 ***
 
 ## 📜 Pseudocódigo y DFD
