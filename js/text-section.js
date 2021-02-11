@@ -1,10 +1,7 @@
 const memeTopText = document.getElementById('meme-top-text');
-/* const memeImage = document.getElementById('meme-image');//ver */
 const memeBottomText = document.getElementById('meme-bottom-text');
 const fontColorText = document.getElementById('font-color-text');
 const fontBackgroundText = document.getElementById('font-background-text');
-
-
 
 const topText = document.getElementById('top-text');
 const bottomText = document.getElementById('bottom-text');
@@ -35,7 +32,7 @@ bottomText.addEventListener('keyup', () => {
   memeBottomText.innerHTML = bottomText.value;
 });
 
-// Evento para que se elimine la caja de top-text y de bottom-text
+// Eventos para que se elimine la caja de top-text y de bottom-text
 topTextCheck.addEventListener('click',() => {
   if(topTextCheck.checked){    
     memeTopText.style.display = 'none'

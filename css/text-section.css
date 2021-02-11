@@ -1,10 +1,7 @@
-
-
-/* Contenedor principal*/
+/* Sección editor de texto de la imagen*/
 
 .text-section{
-    background-color: var(--aside-color);    
-    /* width: 25%;   */  
+    background-color: var(--aside-color); 
     width: 18rem;
     color: var(--color-principal);          
     right: -25%;
@@ -78,7 +75,6 @@
 }
 
 /* Color */
-
 
 .section-color-background{
     display: flex;    
@@ -190,7 +186,7 @@
     font-family: 'Times New Roman';
 }
 
-
+/* Opciones de la fuente */
 
 .option-size{    
     width: 48%;
@@ -220,6 +216,7 @@
     margin: 0 2px;
 }
 
+/* Color */
 
 .section-color-background{
     display: flex;    
@@ -258,10 +255,11 @@
     position: absolute;    
 }
 
+/* Responsive */
+
  @media (max-width: 1300px){
     .text-section{
-        display: none;
-        /* right: -30%; */
+        display: none;        
         overflow: scroll;    
     }
 
@@ -284,7 +282,6 @@
     .text-section{
         width: 100%;        
         position: absolute;
-        /* height: 58rem;   */
         height: auto; 
     }
 

@@ -1,3 +1,5 @@
+/* Sección meme editable*/
+
 .main{    
     background-image: url(../assets/img/background.png);
     background-repeat: no-repeat;    
@@ -11,9 +13,8 @@
 
 .meme-section{    
     max-width: 610px;
-    width: 100%;
-    /* height: 580px;  */   
-    height: 35rem; /* ver */
+    width: 100%;     
+    height: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,16 +23,6 @@
     position: relative;    
     background-color: var(--color-secundary);    
 }
-/* .meme-section{    
-    position: relative;
-    height: 20rem;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;     
-} */
 
 .meme-top-text, .meme-bottom-text{
     background-color: var(--image-text-color);
@@ -46,13 +37,14 @@
 .meme-image{
     background-color: var(--image-meme-color); 
     height: 100%;
-    width: 100%;
-   /*  background-blend-mode: multiply; */
+    width: 100%;   
 }
 
 .image-download{    
     margin: 20px 0;
 }
+
+/* Botón de descarga del meme */
 
 .download-meme{
     background-color: var(--button-color);
@@ -82,6 +74,8 @@
     transition: all 0.8s ease;  
 }
 
+/* Background modo claro */
+
 .light-background{
     background-image: url(../assets/img/background-light.png);
     background-repeat: no-repeat;    
@@ -89,10 +83,11 @@
     background-position: center;       
 }
 
+/* Responsive */
+
 @media (max-width: 700px){
     .meme-section{        
-        width: 90%;     
-        /* height: 35rem;   */          
+        width: 90%;                     
     }
 
     .meme-top-text, .meme-bottom-text{   
@@ -106,10 +101,6 @@
 }
 
 @media (max-width: 600px){
-/*     .meme-section{                 
-        height: 33rem;            
-    } */
-
     .meme-top-text, .meme-bottom-text{   
         font-size: 2rem;                   
     }
@@ -120,9 +111,3 @@
         font-size: 0.9rem;  
     }
 }
-
-/* @media (max-width: 500px){
-    .meme-section{                 
-        height: 30rem;            
-    }
-} */

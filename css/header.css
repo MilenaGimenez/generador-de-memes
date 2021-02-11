@@ -1,3 +1,4 @@
+/* Estilos principales */
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +27,8 @@ body.light-theme{
     --image-text-color: #fff; 
     --image-meme-color: #000;
 }
+
+/* Fuentes añadidas localmente */
 
 @font-face{
     font-family: "Andale mono";
@@ -62,6 +65,8 @@ body.light-theme{
     flex-direction: column;
     width: 100%;
 }
+
+/* Estilos de barra de navegación */
 
 .nav{
     background-color: var(--nav-color);
@@ -149,6 +154,8 @@ body.light-theme{
     transition: all 0.8s ease;    
 }
 
+/* Utilidades para JS */
+
 .display-none{
     display: none;
 }
@@ -156,6 +163,9 @@ body.light-theme{
 .display-block{
     display: block;
 }
+
+
+/* Responsive */
 
 @media (max-width: 500px){
     .nav-title-box{        

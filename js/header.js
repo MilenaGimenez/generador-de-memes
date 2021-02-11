@@ -13,14 +13,11 @@ const imageSection = document.getElementById('image-section');
 const textSection = document.getElementById('text-section');
 
 
-/* textSection.classList.add('display-none'); */
-
+// Modos claro y oscuro
 lightMode.addEventListener('click', () => {    
         document.body.classList.add('light-theme')        
         background.classList.add('light-background')
         lightMode.classList.add('display-none')
-        //hasta aca arriba, el boton desaparece
-
         darkMode.classList.add('display-block')
 });
 
@@ -31,24 +28,20 @@ darkMode.addEventListener('click', () => {
     darkMode.classList.remove('display-block')
 });
 
-textButton.addEventListener('click', () => {
-    /* imageSection.style.right = '-25%'
-    textSection.style.right = '0px' */
+
+// Botón show sección texto y sección imagen 
+textButton.addEventListener('click', () => {    
     imageSection.style.display = 'none'
     textSection.style.display = 'block'
     textSection.style.right = '0px'    
 });
 
-imageButton.addEventListener('click', () => {
-    /* imageSection.style.right = '0px'
-    textSection.style.right = '-25%' */
+imageButton.addEventListener('click', () => {    
     imageSection.style.display = 'block'
-    textSection.style.display = 'none'
-    /* textSection.style.right = '-25%' */
+    textSection.style.display = 'none'    
 });
 
-// Boton cerrar seccion 
-
+// Botón hidden sección texto y sección imagen
 closeButtonImage.addEventListener('click', () => {  
     imageSection.style.display= 'none';
 });
@@ -58,24 +51,21 @@ closeButtonText.addEventListener('click', () => {
 });
 
 
-//boton descarga
-
+// Botón descarga del meme
 downloadMeme.addEventListener('click', (e) => {    
     domtoimage.toBlob(memeSection)
     .then(function (blob) {
         window.saveAs(blob, 'mi-meme.png');
-    });
-    
+    });    
 });
 
-// responsive de secciones
+// Responsive de las secciones
 if(window.innerWidth > 1300){
     window.addEventListener('resize', ()=>{
         if(window.innerWidth > 1300){
             imageSection.style.display = 'block';
         } else {
-            imageSection.style.display ='none';
-            /* textSection.style.display = 'none'; */
+            imageSection.style.display ='none';            
         };
     });
 };

@@ -1,13 +1,11 @@
-/* Contenedor principal*/
+/* Sección editor de la imagen*/
 
 .image-section{
-    background-color: var(--aside-color);    
-    /* width: 25%;    */ 
+    background-color: var(--aside-color);  
     width: 18rem;
     color: var(--color-principal);      
     position: fixed;
-    right: 0px;  
-    /* height: auto;   */
+    right: 0px;      
     height: 100vh;
 }
 
@@ -63,7 +61,7 @@
     width: 16rem;  
 }
 
-/* FILTROS */
+/* Filtros */
 
 .filter-option-label{
     font-size: 0.9rem;
@@ -98,6 +96,7 @@
   cursor: pointer;
 }
 
+/* Botón reset filtros */
 
 .reset-button{
     margin-top: 10px;
@@ -128,7 +127,7 @@
 }
 
 
-/* FONDO */
+/* Fondo */
 
 .color-box{
     background-color: white;
@@ -193,6 +192,7 @@
     border: none;
 }
 
+/* Responsive */
 
 @media (max-width: 1300px){
     .image-section{
@@ -218,12 +218,10 @@
 @media (max-width: 700px){
     .image-section{
         width: 100%;        
-        position: absolute;
-        /* height: 58rem; */    
+        position: absolute;        
         height: auto;    
     }
-   
-    /* Boton */
+       
     .section-filters-button{        
         display: flex;
         justify-content: center;
@@ -241,11 +239,5 @@
     .reset-button:hover{
         padding: 2%;
         margin: 29px 0;
-    }
-}
-
-@media (max-width: 450px){
-    .image-section{        
-        /* height: 52rem;  */
     }
 }
